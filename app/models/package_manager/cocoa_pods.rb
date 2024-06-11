@@ -7,6 +7,7 @@ module PackageManager
     BIBLIOTHECARY_SUPPORT = true
     URL = "http://cocoapods.org/"
     COLOR = "#438eff"
+    ICON = "cocoapods.svg"
 
     def self.package_link(db_project, _version = nil)
       "http://cocoapods.org/pods/#{db_project.name}"

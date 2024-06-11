@@ -8,6 +8,7 @@ module PackageManager
     BIBLIOTHECARY_SUPPORT = true
     URL = "https://anaconda.org"
     API_URL = "https://conda.libraries.io"
+    ICON = "conda.svg"
 
     PROVIDER_MAP = ProviderMap.new(prioritized_provider_infos: [
       ProviderInfo.new(identifier: "Main", default: true, provider_class: Main),

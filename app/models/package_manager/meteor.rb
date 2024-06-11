@@ -7,6 +7,7 @@ module PackageManager
     BIBLIOTHECARY_SUPPORT = true
     URL = "https://atmospherejs.com"
     COLOR = "#f1e05a"
+    ICON = "meteor.svg"
 
     def self.package_link(db_project, _version = nil)
       "https://atmospherejs.com/#{db_project.name.tr(':', '/')}"

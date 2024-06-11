@@ -7,6 +7,7 @@ module PackageManager
     BIBLIOTHECARY_SUPPORT = true
     URL = "http://package.elm-lang.org/"
     COLOR = "#60B5CC"
+    ICON = "elm.svg"
 
     def self.package_link(db_project, version = nil)
       "http://package.elm-lang.org/packages/#{db_project.name}/#{version || 'latest'}"

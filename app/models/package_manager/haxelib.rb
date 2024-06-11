@@ -7,6 +7,7 @@ module PackageManager
     BIBLIOTHECARY_SUPPORT = true
     URL = "https://lib.haxe.org"
     COLOR = "#df7900"
+    ICON = "haxelib.svg"
 
     def self.package_link(db_project, version = nil)
       "https://lib.haxe.org/p/#{db_project.name}/#{version}"

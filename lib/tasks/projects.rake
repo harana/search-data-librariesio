@@ -83,6 +83,13 @@ namespace :projects do
     end
   end
 
+  desc "Sync project keywords"
+  task sync_keywords: :environment do
+    Project.find_each do |project|
+      project.update_repository_keywords
+    end
+  end
+
   desc "Update project repositories"
   task update_repos: :environment do
     exit if ENV["READ_ONLY"].present?

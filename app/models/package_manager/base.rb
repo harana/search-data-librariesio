@@ -16,6 +16,7 @@ module PackageManager
     SYNC_ACTIVE = true
     HAS_OWNERS = false
     ENTIRE_PACKAGE_CAN_BE_DEPRECATED = false
+    ICON = ""
 
     def self.platforms
       @platforms ||= begin
@@ -55,6 +56,10 @@ module PackageManager
 
     def self.homepage
       self::URL
+    end
+
+    def self.icon
+      self::ICON
     end
 
     def self.formatted_name
@@ -258,6 +263,10 @@ module PackageManager
       db_project.update!(last_synced_at: Time.now)
       db_project.try(:update_repository_async)
       db_project
+    end
+
+    def import_async
+      download_async(project_names)
     end
 
     def self.import_async

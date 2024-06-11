@@ -7,6 +7,7 @@ module PackageManager
     BIBLIOTHECARY_SUPPORT = true
     URL = "https://metacpan.org"
     COLOR = "#0298c3"
+    ICON = "cpan.jpg"
 
     def self.package_link(db_project, _version = nil)
       "https://metacpan.org/release/#{db_project.name}"

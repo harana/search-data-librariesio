@@ -6,6 +6,7 @@ module PackageManager
     HAS_DEPENDENCIES = false
     URL = "http://alcatraz.io"
     COLOR = "#438eff"
+    ICON = "alcatraz.svg"
 
     def self.project_names
       projects.keys.sort

@@ -9,8 +9,6 @@ namespace :app do
       ApiKey.delete_all
       Repository.where(private: true).find_each do |repo|
         repo.destroy
-      rescue Elasticsearch::Transport::Transport::Errors::NotFound
-        nil
       end
       Subscription.delete_all
       WebHook.delete_all

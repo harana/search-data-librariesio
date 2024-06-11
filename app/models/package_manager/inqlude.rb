@@ -7,6 +7,7 @@ module PackageManager
     BIBLIOTHECARY_PLANNED = true
     URL = "https://inqlude.org/"
     COLOR = "#f34b7d"
+    ICON = ""
 
     def self.package_link(db_project, _version = nil)
       "https://inqlude.org/libraries/#{db_project.name}.html"

@@ -9,6 +9,7 @@ module PackageManager
     SECURITY_PLANNED = true
     URL = "https://rubygems.org"
     COLOR = "#701516"
+    ICON = "rubygems.svg"
 
     def self.missing_version_remover
       PackageManager::Base::MissingVersionRemover
@@ -35,7 +36,7 @@ module PackageManager
     end
 
     def self.project_names
-      gems = Marshal.safe_load(Gem.gunzip(get_raw("http://production.cf.rubygems.org/specs.4.8.gz")))
+      gems = Marshal.load(Gem::Util.gunzip(get_raw("http://production.cf.rubygems.org/specs.4.8.gz")))
       gems.map(&:first).uniq
     end
 

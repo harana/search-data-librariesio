@@ -17,6 +17,7 @@ module PackageManager
       "://www.eclipse.org/org/documents/edl-v10" => "Eclipse Distribution License (EDL), Version 1.0",
     }.freeze
     NAME_DELIMITER = ":"
+    ICON = "maven.svg"
 
     PROVIDER_MAP = ProviderMap.new(prioritized_provider_infos: [
       ProviderInfo.new(identifier: "Maven", default: true, provider_class: MavenCentral),

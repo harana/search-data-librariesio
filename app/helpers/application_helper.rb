@@ -218,9 +218,9 @@ module ApplicationHelper
   def default_meta_tags
     {
       title: "Libraries - The Open Source Discovery Service",
-      url: "https://libraries.io",
+      url: "https://harana.dev",
       description: "Discover open source libraries, modules and frameworks you can use in your code",
-      image: "https://libraries.io/apple-touch-icon-152x152.png",
+      image: "https://harana.dev/apple-touch-icon-152x152.png",
       site_name: "Libraries.io",
       site_twitter: "@librariesio",
     }

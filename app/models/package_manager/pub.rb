@@ -7,6 +7,7 @@ module PackageManager
     BIBLIOTHECARY_SUPPORT = true
     URL = "https://pub.dartlang.org"
     COLOR = "#00B4AB"
+    ICON = "pub.png"
 
     def self.package_link(db_project, _version = nil)
       "https://pub.dartlang.org/packages/#{db_project.name}"

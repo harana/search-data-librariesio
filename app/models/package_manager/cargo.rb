@@ -11,6 +11,7 @@ module PackageManager
     URL = "https://crates.io"
     COLOR = "#dea584"
     ENTIRE_PACKAGE_CAN_BE_DEPRECATED = true
+    ICON = "cargo.svg"
 
     def self.package_link(db_project, version = nil)
       "https://crates.io/crates/#{db_project.name}/#{version}"

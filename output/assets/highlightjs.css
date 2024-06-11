@@ -1,0 +1,69 @@
+.highlight .pl-c {
+    color: #969896;
+}
+.highlight .pl-c1, .highlight .pl-s .pl-v {
+    color: #0086b3;
+}
+.highlight .pl-e, .highlight .pl-en {
+    color: #795da3;
+}
+.highlight .pl-smi, .highlight .pl-s .pl-s1 {
+    color: #333;
+}
+.highlight .pl-ent {
+    color: #63a35c;
+}
+.highlight .pl-k {
+    color: #a71d5d;
+}
+.highlight .pl-s, .highlight .pl-pds, .highlight .pl-s .pl-pse .pl-s1, .highlight .pl-sr, .highlight .pl-sr .pl-cce, .highlight .pl-sr .pl-sre, .highlight .pl-sr .pl-sra {
+    color: #183691;
+}
+.highlight .pl-v {
+    color: #ed6a43;
+}
+.highlight .pl-id {
+    color: #b52a1d;
+}
+.highlight .pl-ii {
+    color: #f8f8f8;
+    background-color: #b52a1d;
+}
+.highlight .pl-sr .pl-cce {
+    font-weight: bold;
+    color: #63a35c;
+}
+.highlight .pl-ml {
+    color: #693a17;
+}
+.highlight .pl-mh, .highlight .pl-mh .pl-en, .highlight .pl-ms {
+    font-weight: bold;
+    color: #1d3e81;
+}
+.highlight .pl-mq {
+    color: #008080;
+}
+.highlight .pl-mi {
+    font-style: italic;
+    color: #333;
+}
+.highlight .pl-mb {
+    font-weight: bold;
+    color: #333;
+}
+.highlight .pl-md {
+    color: #bd2c00;
+    background-color: #ffecec;
+}
+.highlight .pl-mi1 {
+    color: #55a532;
+    background-color: #eaffea;
+}
+.highlight .pl-mdr {
+    font-weight: bold;
+    color: #795da3;
+}
+.highlight .pl-mo {
+    color: #1d3e81;
+}
+ 

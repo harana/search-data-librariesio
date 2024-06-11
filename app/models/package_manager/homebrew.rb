@@ -8,6 +8,7 @@ module PackageManager
     SECURITY_PLANNED = false
     URL = "http://brew.sh/"
     COLOR = "#555555"
+    ICON = "homebrew.svg"
 
     def self.package_link(db_project, _version = nil)
       "http://formulae.brew.sh/formula/#{db_project.name}"

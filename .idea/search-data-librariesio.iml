@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="RailsFacetType" name="Ruby on Rails">
+      <configuration>
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_FACET_SUPPORT_REMOVED" VALUE="false" />
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_TESTS_SOURCES_PATCHED" VALUE="true" />
+        <RAILS_FACET_CONFIG_ID NAME="RAILS_FACET_APPLICATION_ROOT" VALUE="$MODULE_DIR$" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="ModuleRunConfigurationManager">
+    <shared />
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/features" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/.bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/components" />
+      <excludeFolder url="file://$MODULE_DIR$/log" />
+      <excludeFolder url="file://$MODULE_DIR$/public/packs" />
+      <excludeFolder url="file://$MODULE_DIR$/public/system" />
+      <excludeFolder url="file://$MODULE_DIR$/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/cache" />
+    </content>
+    <orderEntry type="jdk" jdkName="ruby-3.3.2-p78" jdkType="RUBY_SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="actioncable (v7.0.8.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actionmailbox (v7.0.8.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actionmailer (v7.0.8.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actionpack (v7.0.8.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actiontext (v7.0.8.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="actionview (v7.0.8.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="active_model_serializers (v0.10.14, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activejob (v7.0.8.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activemodel (v7.0.8.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activerecord (v7.0.8.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activestorage (v7.0.8.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activesupport (v7.0.8.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="addressable (v2.8.6, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="annotate (v3.2.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="api-pagination (v5.0.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="asciidoctor (v2.0.23, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ast (v2.4.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="autoprefixer-rails (v10.4.16.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="aws-eventstream (v1.3.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="aws-partitions (v1.937.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="aws-sdk-core (v3.196.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="aws-sdk-kms (v1.82.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="aws-sdk-s3 (v1.151.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="aws-sigv4 (v1.8.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bibliothecary (v8.8.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bigdecimal (v3.1.8, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bitbucket_rest_api (v0.1.7@73e9e5, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.18.3, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bootstrap-sass (v3.4.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="brakeman (v6.1.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="brotli (v0.5.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bugsnag (v6.27.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.4, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v2.5.11, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="byebug (v11.1.3, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="capybara (v3.40.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="case_transform (v0.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cgi (v0.4.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="charlock_holmes (v0.7.7, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="chartkick (v3.4.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="chronic (v0.10.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="coderay (v1.1.3, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="commander (v5.0.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="commonmarker (v1.1.3, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.3.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby-ext (v1.3.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="connection_pool (v2.4.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="counter_culture (v3.5.3, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="crack (v1.0.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="creole (v0.5.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="css_parser (v1.17.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="csv (v3.3.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dalli (v3.2.8, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="database_cleaner (v1.99.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="database_cleaner-active_record (v2.1.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="database_cleaner-core (v2.0.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="datadog-ci (v0.3.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="db-query-matchers (v0.12.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ddtrace (v1.16.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="deb_control (v0.0.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="debase-ruby_core_source (v3.2.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.5.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="docile (v1.4.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dotenv (v3.1.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="dotenv-rails (v3.1.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="erubi (v1.12.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="escape_utils (v1.3.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ethon (v0.16.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="event_stream_parser (v1.0.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="execjs (v2.9.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="factory_bot (v6.2.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="factory_bot_rails (v6.2.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faker (v3.4.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday (v1.10.3, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-em_http (v1.0.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-em_synchrony (v1.0.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-excon (v1.1.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-http-cache (v2.5.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-httpclient (v1.0.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-multipart (v1.0.4, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-net_http (v1.0.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-net_http_persistent (v1.2.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-patron (v1.0.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-rack (v1.0.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday-retry (v1.0.3, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faraday_middleware (v1.2.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="fast_blank (v1.0.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ffi (v1.17.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="font-awesome-rails (v4.7.0.8, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="foreman (v0.88.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="fuzzy_match (v2.1.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="gemoji (v4.1.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="github-linguist (v7.29.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="github-markup (v4.0.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="gitlab (v4.19.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="globalid (v1.2.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="google-protobuf (v4.27.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="graphql (v1.13.23, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="graphql-client (v0.18.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="groupdate (v6.4.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="hashdiff (v1.1.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="hashie (v5.0.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="highline (v3.0.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="hiredis (v0.6.3, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="hiredis-client (v0.22.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="htmlentities (v4.3.4, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="httparty (v0.22.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="i18n (v1.14.5, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="indefinite_article (v0.2.5, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jb (v0.8.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jmespath (v1.6.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v4.6.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="json (v2.7.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="json_spec (v1.1.5, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jsonapi-renderer (v0.2.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jwt (v2.8.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="language_server-protocol (v3.17.0.3, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="libdatadog (v5.0.0.1.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="libddwaf (v1.14.0.0.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="librariesio-gem-parser (v1.0.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="librariesio-url-parser (v1.0.9, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="license-compatibility (v3.1.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="listen (v3.9.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="lograge (v0.14.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="loofah (v2.22.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mail (v2.8.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="marcel (v1.0.4, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="marginalia (v1.11.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="matrix (v0.4.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="method_source (v1.1.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mime-types (v3.5.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mime-types-data (v3.2024.0507, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.1.5, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="minitest (v5.23.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="msgpack (v1.7.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.15.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_xml (v0.7.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multipart-post (v2.4.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="net-imap (v0.4.12, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="net-pop (v0.1.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="net-smtp (v0.5.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.7.3, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.16.5, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="oauth2 (v2.0.9, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="octicons (v19.9.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="octicons_helper (v19.9.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="octokit (v8.1.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="oj (v3.16.3, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="omniauth (v2.1.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="omniauth-atlassian-bitbucket (v0.1.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="omniauth-github (v2.0.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="omniauth-gitlab (v4.1.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="omniauth-oauth2 (v1.8.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="omniauth-rails_csrf_protection (v1.0.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="org-ruby (v0.9.12, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ox (v2.14.18, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="packageurl-ruby (v0.1.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="parallel (v1.24.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="parser (v3.3.2.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pg (v1.5.6, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pg_query (v5.1.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pg_search (v2.3.6, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pghero (v3.5.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pictogram (v2.0.12, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.5, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="premailer (v1.23.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="premailer-rails (v1.12.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pry (v0.14.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pry-byebug (v3.10.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pry-rails (v0.3.9, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="psych (v5.1.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="public_suffix (v5.0.5, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="puma (v6.4.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="racc (v1.8.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack (v2.2.9, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-attack (v6.7.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-canonical-host (v1.3.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-cors (v2.0.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-protection (v3.2.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-test (v2.1.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails (v7.0.8.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails-dom-testing (v2.2.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails-html-sanitizer (v1.6.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails-timeago (v2.16.0@4225f8, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rails_safe_tasks (v1.0.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="railties (v7.0.8.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rainbow (v3.1.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v13.2.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rb-fsevent (v0.11.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rb-inotify (v0.11.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rb-readline (v0.5.5, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rdoc (v6.7.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="redis (v5.2.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="redis-client (v0.22.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v2.9.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="request_store (v1.7.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="resolv (v0.4.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rexml (v3.2.8, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec (v3.13.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-core (v3.13.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v3.13.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v3.13.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-rails (v6.1.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-sidekiq (v5.0.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-support (v3.13.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec_junit_formatter (v0.6.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubocop (v1.64.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v1.31.3, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ruby-openai (v7.0.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.13.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubypants (v0.7.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubyzip (v2.3.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rugged (v1.7.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rutie (v0.0.4, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sanitize-url (v0.1.4, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sassc (v2.4.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sassc-rails (v2.1.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sawyer (v0.9.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="scenic (v1.8.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sdl4r (v0.9.11, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="semantic (v1.6.1@ed94ea, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="semantic_range (v3.0.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="shoulda (v4.0.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="shoulda-context (v2.0.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="shoulda-matchers (v4.5.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sidekiq (v7.2.4, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sidekiq-unique-jobs (v8.0.10, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="simple-rss (v1.3.3, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="simple_form (v5.3.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="simple_oauth (v0.3.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="simplecov (v0.22.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="simplecov-html (v0.12.3, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="simplecov_json_formatter (v0.1.4, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sitemap_generator (v6.3.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="snaky_hash (v2.0.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="spdx (v2.0.11, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sprockets (v4.2.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.4.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sql_queries_count (v0.0.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="strings (v0.2.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="strings-ansi (v0.2.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="strong_migrations (v0.8.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="strscan (v3.1.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="terminal-table (v3.0.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="thor (v1.3.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tilt (v2.3.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tomlrb (v2.0.3, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="treetop (v1.6.12, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="turbolinks (v5.2.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="turbolinks-source (v5.2.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="typhoeus (v1.4.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tzinfo (v2.0.6, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="uglifier (v4.2.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v2.5.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="unicode_utils (v1.4.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="vcr (v6.2.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="version_gem (v1.1.4, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="webmock (v3.23.1, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="websocket-driver (v0.7.6, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="websocket-extensions (v0.1.5, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="will_paginate (v4.0.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="will_paginate-bootstrap (v1.0.2, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="xpath (v3.2.0, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="yajl-ruby (v1.4.3, ruby-3.3.2-p78) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="zeitwerk (v2.6.15, ruby-3.3.2-p78) [gem]" level="application" />
+  </component>
+  <component name="RModuleSettingsStorage">
+    <LOAD_PATH number="0" />
+    <I18N_FOLDERS number="1" string0="$MODULE_DIR$/config/locales" />
+  </component>
+  <component name="RailsGeneratorsCache">
+    <option name="generators">
+      <list>
+        <option value="active_record:application_record" />
+        <option value="active_record:multi_db" />
+        <option value="annotate:install" />
+        <option value="application_record" />
+        <option value="benchmark" />
+        <option value="bugsnag" />
+        <option value="channel" />
+        <option value="controller" />
+        <option value="counter_culture" />
+        <option value="factory_bot:model" />
+        <option value="generator" />
+        <option value="graphql:enum" />
+        <option value="graphql:input" />
+        <option value="graphql:install" />
+        <option value="graphql:install:mutation_root" />
+        <option value="graphql:interface" />
+        <option value="graphql:loader" />
+        <option value="graphql:mutation" />
+        <option value="graphql:mutation_create" />
+        <option value="graphql:mutation_delete" />
+        <option value="graphql:mutation_update" />
+        <option value="graphql:object" />
+        <option value="graphql:relay" />
+        <option value="graphql:scalar" />
+        <option value="graphql:union" />
+        <option value="helper" />
+        <option value="integration_test" />
+        <option value="jb" />
+        <option value="job" />
+        <option value="mailbox" />
+        <option value="mailer" />
+        <option value="migration" />
+        <option value="model" />
+        <option value="pg_search:migration:dmetaphone" />
+        <option value="pg_search:migration:multisearch" />
+        <option value="pghero:config" />
+        <option value="pghero:query_stats" />
+        <option value="pghero:space_stats" />
+        <option value="resource" />
+        <option value="rspec:channel" />
+        <option value="rspec:controller" />
+        <option value="rspec:feature" />
+        <option value="rspec:generator" />
+        <option value="rspec:helper" />
+        <option value="rspec:install" />
+        <option value="rspec:integration" />
+        <option value="rspec:job" />
+        <option value="rspec:mailbox" />
+        <option value="rspec:mailer" />
+        <option value="rspec:model" />
+        <option value="rspec:request" />
+        <option value="rspec:scaffold" />
+        <option value="rspec:system" />
+        <option value="rspec:view" />
+        <option value="scaffold" />
+        <option value="scaffold_controller" />
+        <option value="scenic:model" />
+        <option value="scenic:view" />
+        <option value="scss:assets" />
+        <option value="scss:scaffold" />
+        <option value="serializer" />
+        <option value="sidekiq:job" />
+        <option value="simple_form:install" />
+        <option value="strong_migrations:install" />
+        <option value="system_test" />
+        <option value="task" />
+        <option value="test_unit:channel" />
+        <option value="test_unit:controller" />
+        <option value="test_unit:generator" />
+        <option value="test_unit:helper" />
+        <option value="test_unit:install" />
+        <option value="test_unit:integration" />
+        <option value="test_unit:job" />
+        <option value="test_unit:mailbox" />
+        <option value="test_unit:mailer" />
+        <option value="test_unit:model" />
+        <option value="test_unit:plugin" />
+        <option value="test_unit:scaffold" />
+        <option value="test_unit:system" />
+      </list>
+    </option>
+    <option name="myGenerators">
+      <list>
+        <option value="active_record:application_record" />
+        <option value="active_record:multi_db" />
+        <option value="annotate:install" />
+        <option value="application_record" />
+        <option value="benchmark" />
+        <option value="bugsnag" />
+        <option value="channel" />
+        <option value="controller" />
+        <option value="counter_culture" />
+        <option value="factory_bot:model" />
+        <option value="generator" />
+        <option value="graphql:enum" />
+        <option value="graphql:input" />
+        <option value="graphql:install" />
+        <option value="graphql:install:mutation_root" />
+        <option value="graphql:interface" />
+        <option value="graphql:loader" />
+        <option value="graphql:mutation" />
+        <option value="graphql:mutation_create" />
+        <option value="graphql:mutation_delete" />
+        <option value="graphql:mutation_update" />
+        <option value="graphql:object" />
+        <option value="graphql:relay" />
+        <option value="graphql:scalar" />
+        <option value="graphql:union" />
+        <option value="helper" />
+        <option value="integration_test" />
+        <option value="jb" />
+        <option value="job" />
+        <option value="mailbox" />
+        <option value="mailer" />
+        <option value="migration" />
+        <option value="model" />
+        <option value="pg_search:migration:dmetaphone" />
+        <option value="pg_search:migration:multisearch" />
+        <option value="pghero:config" />
+        <option value="pghero:query_stats" />
+        <option value="pghero:space_stats" />
+        <option value="resource" />
+        <option value="rspec:channel" />
+        <option value="rspec:controller" />
+        <option value="rspec:feature" />
+        <option value="rspec:generator" />
+        <option value="rspec:helper" />
+        <option value="rspec:install" />
+        <option value="rspec:integration" />
+        <option value="rspec:job" />
+        <option value="rspec:mailbox" />
+        <option value="rspec:mailer" />
+        <option value="rspec:model" />
+        <option value="rspec:request" />
+        <option value="rspec:scaffold" />
+        <option value="rspec:system" />
+        <option value="rspec:view" />
+        <option value="scaffold" />
+        <option value="scaffold_controller" />
+        <option value="scenic:model" />
+        <option value="scenic:view" />
+        <option value="scss:assets" />
+        <option value="scss:scaffold" />
+        <option value="serializer" />
+        <option value="sidekiq:job" />
+        <option value="simple_form:install" />
+        <option value="strong_migrations:install" />
+        <option value="system_test" />
+        <option value="task" />
+        <option value="test_unit:channel" />
+        <option value="test_unit:controller" />
+        <option value="test_unit:generator" />
+        <option value="test_unit:helper" />
+        <option value="test_unit:install" />
+        <option value="test_unit:integration" />
+        <option value="test_unit:job" />
+        <option value="test_unit:mailbox" />
+        <option value="test_unit:mailer" />
+        <option value="test_unit:model" />
+        <option value="test_unit:plugin" />
+        <option value="test_unit:scaffold" />
+        <option value="test_unit:system" />
+      </list>
+    </option>
+  </component>
+  <component name="RailsPaths" isManagedAutomatically="true">
+    <entry key="app">
+      <value>file://$MODULE_DIR$/app</value>
+    </entry>
+    <entry key="app/assets">
+      <value>file://$MODULE_DIR$/app/assets</value>
+    </entry>
+    <entry key="app/channels">
+      <value>file://$MODULE_DIR$/app/channels</value>
+    </entry>
+    <entry key="app/controllers">
+      <value>file://$MODULE_DIR$/app/controllers</value>
+    </entry>
+    <entry key="app/helpers">
+      <value>file://$MODULE_DIR$/app/helpers</value>
+    </entry>
+    <entry key="app/mailers">
+      <value>file://$MODULE_DIR$/app/mailers</value>
+    </entry>
+    <entry key="app/models">
+      <value>file://$MODULE_DIR$/app/models</value>
+    </entry>
+    <entry key="app/views">
+      <value>file://$MODULE_DIR$/app/views</value>
+    </entry>
+    <entry key="config">
+      <value>file://$MODULE_DIR$/config</value>
+    </entry>
+    <entry key="config/cable">
+      <value>file://$MODULE_DIR$/config/cable.yml</value>
+    </entry>
+    <entry key="config/database">
+      <value>file://$MODULE_DIR$/config/database.yml</value>
+    </entry>
+    <entry key="config/environment">
+      <value>file://$MODULE_DIR$/config/environment.rb</value>
+    </entry>
+    <entry key="config/environments">
+      <value>file://$MODULE_DIR$/config/environments</value>
+    </entry>
+    <entry key="config/initializers">
+      <value>file://$MODULE_DIR$/config/initializers</value>
+    </entry>
+    <entry key="config/locales">
+      <value>file://$MODULE_DIR$/config/locales</value>
+    </entry>
+    <entry key="config/routes">
+      <value>file://$MODULE_DIR$/config/routes</value>
+    </entry>
+    <entry key="config/routes.rb">
+      <value>file://$MODULE_DIR$/config/routes.rb</value>
+    </entry>
+    <entry key="config/secrets">
+      <value>file://$MODULE_DIR$/config</value>
+    </entry>
+    <entry key="db">
+      <value>file://$MODULE_DIR$/db</value>
+    </entry>
+    <entry key="db/migrate">
+      <value>file://$MODULE_DIR$/db/migrate</value>
+    </entry>
+    <entry key="db/seeds.rb">
+      <value>file://$MODULE_DIR$/db/seeds.rb</value>
+    </entry>
+    <entry key="lib">
+      <value>file://$MODULE_DIR$/lib</value>
+    </entry>
+    <entry key="lib/assets">
+      <value>file://$MODULE_DIR$/lib/assets</value>
+    </entry>
+    <entry key="lib/tasks">
+      <value>file://$MODULE_DIR$/lib/tasks</value>
+    </entry>
+    <entry key="lib/templates">
+      <value>file://$MODULE_DIR$/lib/templates</value>
+    </entry>
+    <entry key="log">
+      <value>file://$MODULE_DIR$/log/development.log</value>
+    </entry>
+    <entry key="public">
+      <value>file://$MODULE_DIR$/public</value>
+    </entry>
+    <entry key="public/javascripts">
+      <value>file://$MODULE_DIR$/public/javascripts</value>
+    </entry>
+    <entry key="public/stylesheets">
+      <value>file://$MODULE_DIR$/public/stylesheets</value>
+    </entry>
+    <entry key="tmp">
+      <value>file://$MODULE_DIR$/tmp</value>
+    </entry>
+    <entry key="vendor">
+      <value>file://$MODULE_DIR$/vendor</value>
+    </entry>
+    <entry key="vendor/assets">
+      <value>file://$MODULE_DIR$/vendor/assets</value>
+    </entry>
+  </component>
+  <component name="RakeTasksCache-v2">
+    <option name="myRootTask">
+      <RakeTaskImpl id="rake">
+        <subtasks>
+          <RakeTaskImpl description="List versions of all Rails frameworks and the environment" fullCommand="about" id="about" />
+          <RakeTaskImpl description="Add schema information (as comments) to model and fixture files" fullCommand="annotate_models" id="annotate_models" />
+          <RakeTaskImpl description="Adds the route map to routes.rb" fullCommand="annotate_routes" id="annotate_routes" />
+          <RakeTaskImpl id="app">
+            <subtasks>
+              <RakeTaskImpl description="remove private data" fullCommand="app:remove_private_data" id="remove_private_data" />
+              <RakeTaskImpl description="set the internal flag for an api key to true" fullCommand="app:set_internal_api_key[token]" id="set_internal_api_key[token]" />
+              <RakeTaskImpl description="Applies the template supplied by LOCATION=(/path/to/template) or URL" fullCommand="app:template" id="template" />
+              <RakeTaskImpl description="Update configs and some other initially generated files (or use just update:configs or update:bin)" fullCommand="app:update" id="update" />
+              <RakeTaskImpl description="" fullCommand="app:set_internal_api_key" id="set_internal_api_key" />
+              <RakeTaskImpl id="templates">
+                <subtasks>
+                  <RakeTaskImpl description="" fullCommand="app:templates:copy" id="copy" />
+                </subtasks>
+              </RakeTaskImpl>
+              <RakeTaskImpl id="update">
+                <subtasks>
+                  <RakeTaskImpl description="" fullCommand="app:update:active_storage" id="active_storage" />
+                  <RakeTaskImpl description="" fullCommand="app:update:bin" id="bin" />
+                  <RakeTaskImpl description="" fullCommand="app:update:configs" id="configs" />
+                  <RakeTaskImpl description="" fullCommand="app:update:db" id="db" />
+                  <RakeTaskImpl description="" fullCommand="app:update:upgrade_guide_info" id="upgrade_guide_info" />
+                </subtasks>
+              </RakeTaskImpl>
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="assets">
+            <subtasks>
+              <RakeTaskImpl description="Remove old compiled assets" fullCommand="assets:clean[keep]" id="clean[keep]" />
+              <RakeTaskImpl description="Remove compiled assets" fullCommand="assets:clobber" id="clobber" />
+              <RakeTaskImpl description="Load asset compile environment" fullCommand="assets:environment" id="environment" />
+              <RakeTaskImpl description="Compile all the assets named in config.assets.precompile" fullCommand="assets:precompile" id="precompile" />
+              <RakeTaskImpl description="" fullCommand="assets:clean" id="clean" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="auth_tokens">
+            <subtasks>
+              <RakeTaskImpl description="Verify each authorized AuthToken that it's still authorized" fullCommand="auth_tokens:reverify_authorized[batch_size,start]" id="reverify_authorized[batch_size,start]" />
+              <RakeTaskImpl description="" fullCommand="auth_tokens:reverify_authorized" id="reverify_authorized" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="cache_digests">
+            <subtasks>
+              <RakeTaskImpl description="Lookup first-level dependencies for TEMPLATE (like messages/show or comments/_comment.html)" fullCommand="cache_digests:dependencies" id="dependencies" />
+              <RakeTaskImpl description="Lookup nested dependencies for TEMPLATE (like messages/show or comments/_comment.html)" fullCommand="cache_digests:nested_dependencies" id="nested_dependencies" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="db">
+            <subtasks>
+              <RakeTaskImpl description="Creates the database from DATABASE_URL or config/database.yml for the current RAILS_ENV (use db:create:all to create all databases in the config). Without RAILS_ENV or when RAILS_ENV is development, it defaults to creating the development and test databases, except when DATABASE_URL is present" fullCommand="db:create" id="create" />
+              <RakeTaskImpl description="Drops the database from DATABASE_URL or config/database.yml for the current RAILS_ENV (use db:drop:all to drop all databases in the config). Without RAILS_ENV or when RAILS_ENV is development, it defaults to dropping the development and test databases, except when DATABASE_URL is present" fullCommand="db:drop" id="drop" />
+              <RakeTaskImpl id="encryption">
+                <subtasks>
+                  <RakeTaskImpl description="Generate a set of keys for configuring Active Record encryption in a given environment" fullCommand="db:encryption:init" id="init" />
+                </subtasks>
+              </RakeTaskImpl>
+              <RakeTaskImpl id="environment">
+                <subtasks>
+                  <RakeTaskImpl description="Set the environment value for the database" fullCommand="db:environment:set" id="set" />
+                </subtasks>
+              </RakeTaskImpl>
+              <RakeTaskImpl id="fixtures">
+                <subtasks>
+                  <RakeTaskImpl description="Loads fixtures into the current environment's database" fullCommand="db:fixtures:load" id="load" />
+                  <RakeTaskImpl description="" fullCommand="db:fixtures:identify" id="identify" />
+                </subtasks>
+              </RakeTaskImpl>
+              <RakeTaskImpl description="Migrate the database (options: VERSION=x, VERBOSE=false, SCOPE=blog)" fullCommand="db:migrate" id="migrate" />
+              <RakeTaskImpl id="migrate">
+                <subtasks>
+                  <RakeTaskImpl description="Runs the &quot;down&quot; for a given migration VERSION" fullCommand="db:migrate:down" id="down" />
+                  <RakeTaskImpl description="Rolls back the database one migration and re-migrates up (options: STEP=x, VERSION=x)" fullCommand="db:migrate:redo" id="redo" />
+                  <RakeTaskImpl description="Display status of migrations" fullCommand="db:migrate:status" id="status" />
+                  <RakeTaskImpl description="Runs the &quot;up&quot; for a given migration VERSION" fullCommand="db:migrate:up" id="up" />
+                  <RakeTaskImpl description="" fullCommand="db:migrate:reset" id="reset" />
+                </subtasks>
+              </RakeTaskImpl>
+              <RakeTaskImpl description="Runs setup if database does not exist, or runs migrations if it does" fullCommand="db:prepare" id="prepare" />
+              <RakeTaskImpl description="Drops and recreates all databases from their schema for the current environment and loads the seeds" fullCommand="db:reset" id="reset" />
+              <RakeTaskImpl description="Rolls the schema back to the previous version (specify steps w/ STEP=n)" fullCommand="db:rollback" id="rollback" />
+              <RakeTaskImpl id="schema">
+                <subtasks>
+                  <RakeTaskImpl id="cache">
+                    <subtasks>
+                      <RakeTaskImpl description="Clears a db/schema_cache.yml file" fullCommand="db:schema:cache:clear" id="clear" />
+                      <RakeTaskImpl description="Creates a db/schema_cache.yml file" fullCommand="db:schema:cache:dump" id="dump" />
+                    </subtasks>
+                  </RakeTaskImpl>
+                  <RakeTaskImpl description="Creates a database schema file (either db/schema.rb or db/structure.sql, depending on `ENV['SCHEMA_FORMAT']` or `config.active_record.schema_format`)" fullCommand="db:schema:dump" id="dump" />
+                  <RakeTaskImpl description="Loads a database schema file (either db/schema.rb or db/structure.sql, depending on `ENV['SCHEMA_FORMAT']` or `config.active_record.schema_format`) into the database" fullCommand="db:schema:load" id="load" />
+                </subtasks>
+              </RakeTaskImpl>
+              <RakeTaskImpl description="Loads the seed data from db/seeds.rb" fullCommand="db:seed" id="seed" />
+              <RakeTaskImpl id="seed">
+                <subtasks>
+                  <RakeTaskImpl description="Truncates tables of each database for current environment and loads the seeds" fullCommand="db:seed:replant" id="replant" />
+                </subtasks>
+              </RakeTaskImpl>
+              <RakeTaskImpl description="Creates all databases, loads all schemas, and initializes with the seed data (use db:reset to also drop all databases first)" fullCommand="db:setup" id="setup" />
+              <RakeTaskImpl description="Retrieves the current schema version number" fullCommand="db:version" id="version" />
+              <RakeTaskImpl description="" fullCommand="db:_dump" id="_dump" />
+              <RakeTaskImpl description="" fullCommand="db:abort_if_pending_migrations" id="abort_if_pending_migrations" />
+              <RakeTaskImpl description="" fullCommand="db:charset" id="charset" />
+              <RakeTaskImpl description="" fullCommand="db:check_protected_environments" id="check_protected_environments" />
+              <RakeTaskImpl description="" fullCommand="db:collation" id="collation" />
+              <RakeTaskImpl id="create">
+                <subtasks>
+                  <RakeTaskImpl description="" fullCommand="db:create:all" id="all" />
+                </subtasks>
+              </RakeTaskImpl>
+              <RakeTaskImpl id="drop">
+                <subtasks>
+                  <RakeTaskImpl description="" fullCommand="db:drop:_unsafe" id="_unsafe" />
+                  <RakeTaskImpl description="" fullCommand="db:drop:all" id="all" />
+                </subtasks>
+              </RakeTaskImpl>
+              <RakeTaskImpl description="" fullCommand="db:forward" id="forward" />
+              <RakeTaskImpl description="" fullCommand="db:load_config" id="load_config" />
+              <RakeTaskImpl description="" fullCommand="db:purge" id="purge" />
+              <RakeTaskImpl id="purge">
+                <subtasks>
+                  <RakeTaskImpl description="" fullCommand="db:purge:all" id="all" />
+                </subtasks>
+              </RakeTaskImpl>
+              <RakeTaskImpl id="reset">
+                <subtasks>
+                  <RakeTaskImpl description="" fullCommand="db:reset:all" id="all" />
+                </subtasks>
+              </RakeTaskImpl>
+              <RakeTaskImpl id="setup">
+                <subtasks>
+                  <RakeTaskImpl description="" fullCommand="db:setup:all" id="all" />
+                </subtasks>
+              </RakeTaskImpl>
+              <RakeTaskImpl id="test">
+                <subtasks>
+                  <RakeTaskImpl description="" fullCommand="db:test:load" id="load" />
+                  <RakeTaskImpl description="" fullCommand="db:test:load_schema" id="load_schema" />
+                  <RakeTaskImpl description="" fullCommand="db:test:prepare" id="prepare" />
+                  <RakeTaskImpl description="" fullCommand="db:test:purge" id="purge" />
+                </subtasks>
+              </RakeTaskImpl>
+              <RakeTaskImpl description="" fullCommand="db:truncate_all" id="truncate_all" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="documentation">
+            <subtasks>
+              <RakeTaskImpl description="Generate Package Manager Matrix" fullCommand="documentation:package_manager_matrix" id="package_manager_matrix" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="download">
+            <subtasks>
+              <RakeTaskImpl description="Download Alcatraz packages asynchronously" fullCommand="download:alcatraz" id="alcatraz" />
+              <RakeTaskImpl description="Download new Bower packages asynchronously" fullCommand="download:bower" id="bower" />
+              <RakeTaskImpl description="Download all Bower packages" fullCommand="download:bower_all" id="bower_all" />
+              <RakeTaskImpl description="Download recent Cargo packages asynchronously" fullCommand="download:cargo" id="cargo" />
+              <RakeTaskImpl description="Download all Carthage packages asynchronously" fullCommand="download:carthage" id="carthage" />
+              <RakeTaskImpl description="Download recent Clojars packages" fullCommand="download:clojars" id="clojars" />
+              <RakeTaskImpl description="Download recent CocoaPods packages asynchronously" fullCommand="download:cocoapods" id="cocoapods" />
+              <RakeTaskImpl description="Download all CocoaPods packages asynchronously" fullCommand="download:cocoapods_all" id="cocoapods_all" />
+              <RakeTaskImpl description="Download recent Conda packages asynchronously" fullCommand="download:conda" id="conda" />
+              <RakeTaskImpl description="Download all Conda packages asynchronously" fullCommand="download:conda_all" id="conda_all" />
+              <RakeTaskImpl description="Download recent CPAN packages asynchronously" fullCommand="download:cpan" id="cpan" />
+              <RakeTaskImpl description="Download all CPAN packages asynchronously" fullCommand="download:cpan_all" id="cpan_all" />
+              <RakeTaskImpl description="Download recent CRAN packages asynchronously" fullCommand="download:cran" id="cran" />
+              <RakeTaskImpl description="Download all CRAN packages asynchronously" fullCommand="download:cran_all" id="cran_all" />
+              <RakeTaskImpl description="Download all Dub packages asynchronously" fullCommand="download:dub" id="dub" />
+              <RakeTaskImpl description="Download recent Elm packages asynchronously" fullCommand="download:elm" id="elm" />
+              <RakeTaskImpl description="Download all Elm packages asynchronously" fullCommand="download:elm_all" id="elm_all" />
+              <RakeTaskImpl description="Download new Go packages asynchronously" fullCommand="download:go" id="go" />
+              <RakeTaskImpl description="Download all Go packages asynchronously" fullCommand="download:go_all" id="go_all" />
+              <RakeTaskImpl description="Download recent Hackage packages asynchronously" fullCommand="download:hackage" id="hackage" />
+              <RakeTaskImpl description="Download all Hackage packages asynchronously" fullCommand="download:hackage_all" id="hackage_all" />
+              <RakeTaskImpl description="Download recent Haxelib packages asynchronously" fullCommand="download:haxelib" id="haxelib" />
+              <RakeTaskImpl description="Download all Haxelib packages asynchronously" fullCommand="download:haxelib_all" id="haxelib_all" />
+              <RakeTaskImpl description="Download recent Hex packages asynchronously" fullCommand="download:hex" id="hex" />
+              <RakeTaskImpl description="Download all Hex packages" fullCommand="download:hex_all" id="hex_all" />
+              <RakeTaskImpl description="Download recent Homebrew packages asynchronously" fullCommand="download:homebrew" id="homebrew" />
+              <RakeTaskImpl description="Download all Homebrew packages asynchronously" fullCommand="download:homebrew_all" id="homebrew_all" />
+              <RakeTaskImpl description="Download all Inqlude packages" fullCommand="download:inqlude" id="inqlude" />
+              <RakeTaskImpl description="Download all Julia packages asynchronously" fullCommand="download:julia" id="julia" />
+              <RakeTaskImpl description="Download recent Maven packages asynchronously" fullCommand="download:maven" id="maven" />
+              <RakeTaskImpl description="Download all Maven packages asynchronously" fullCommand="download:maven_all" id="maven_all" />
+              <RakeTaskImpl description="Download all Meteor packages asynchronously" fullCommand="download:meteor" id="meteor" />
+              <RakeTaskImpl description="Download undownloaded github repositories" fullCommand="download:new_github_repos" id="new_github_repos" />
+              <RakeTaskImpl description="Download all Nimble packages asynchronously" fullCommand="download:nimble" id="nimble" />
+              <RakeTaskImpl description="Download recent NPM packages asynchronously" fullCommand="download:npm" id="npm" />
+              <RakeTaskImpl description="Download all NPM packages" fullCommand="download:npm_all" id="npm_all" />
+              <RakeTaskImpl description="Download all NuGet packages asynchronously" fullCommand="download:nuget_all" id="nuget_all" />
+              <RakeTaskImpl description="Download all Packagist packages asynchronously" fullCommand="download:packagist_all" id="packagist_all" />
+              <RakeTaskImpl description="Download recent Pub packages asynchronously" fullCommand="download:pub" id="pub" />
+              <RakeTaskImpl description="Download all Puppet packages asynchronously" fullCommand="download:puppet_all" id="puppet_all" />
+              <RakeTaskImpl description="Download new PureScript packages asynchronously" fullCommand="download:purescript" id="purescript" />
+              <RakeTaskImpl description="Download all PureScript packages asynchronously" fullCommand="download:purescript_all" id="purescript_all" />
+              <RakeTaskImpl description="Download recent Pypi packages asynchronously" fullCommand="download:pypi" id="pypi" />
+              <RakeTaskImpl description="Download all Pypi packages asynchronously" fullCommand="download:pypi_all" id="pypi_all" />
+              <RakeTaskImpl description="Download recent Racket packages asynchronously" fullCommand="download:racket" id="racket" />
+              <RakeTaskImpl description="Download recent Rubygems packages asynchronously" fullCommand="download:rubygems" id="rubygems" />
+              <RakeTaskImpl description="Download all Rubygems packages asynchronously" fullCommand="download:rubygems_all" id="rubygems_all" />
+              <RakeTaskImpl description="Download small registries all packages" fullCommand="download:small_registries" id="small_registries" />
+              <RakeTaskImpl description="Download all SwiftPM packages" fullCommand="download:swift" id="swift" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl description="Run the linter with autofix" fullCommand="fix" id="fix" />
+          <RakeTaskImpl id="github">
+            <subtasks>
+              <RakeTaskImpl description="Download all github users" fullCommand="github:download_all_users" id="download_all_users" />
+              <RakeTaskImpl description="Sync github issues" fullCommand="github:sync_issues" id="sync_issues" />
+              <RakeTaskImpl description="Sync github orgs" fullCommand="github:sync_orgs" id="sync_orgs" />
+              <RakeTaskImpl description="Sync github repos" fullCommand="github:sync_repos" id="sync_repos" />
+              <RakeTaskImpl description="Sync github users" fullCommand="github:sync_users" id="sync_users" />
+              <RakeTaskImpl description="Update Github V4 API Schema File" fullCommand="github:update_github_v4_api_file[github_token]" id="update_github_v4_api_file[github_token]" />
+              <RakeTaskImpl description="Update source rank" fullCommand="github:update_source_rank" id="update_source_rank" />
+              <RakeTaskImpl description="Sync trending github repositories" fullCommand="github:update_trending" id="update_trending" />
+              <RakeTaskImpl description="" fullCommand="github:update_github_v4_api_file" id="update_github_v4_api_file" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="harana_index">
+            <subtasks>
+              <RakeTaskImpl description="Generates search indexes and publishes to S3" fullCommand="harana_index:generate_search_indexes" id="generate_search_indexes" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="harana_openai">
+            <subtasks>
+              <RakeTaskImpl description="Enriches projects with information from OpenAI" fullCommand="harana_openai:enrich_projects" id="enrich_projects" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="harana_website">
+            <subtasks>
+              <RakeTaskImpl description="Generates home page and publishes to S3" fullCommand="harana_website:generate_home_page" id="generate_home_page" />
+              <RakeTaskImpl description="Generates package_manager pages and publishes to S3" fullCommand="harana_website:generate_package_manager_pages" id="generate_package_manager_pages" />
+              <RakeTaskImpl description="Generates project pages and publishes to S3" fullCommand="harana_website:generate_project_pages" id="generate_project_pages" />
+              <RakeTaskImpl description="Generates tag pages and publishes to S3" fullCommand="harana_website:generate_tag_pages" id="generate_tag_pages" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl description="Run the linter" fullCommand="lint" id="lint" />
+          <RakeTaskImpl id="log">
+            <subtasks>
+              <RakeTaskImpl description="Truncates all/specified *.log files in log/ to zero bytes (specify which logs with LOGS=test,development)" fullCommand="log:clear" id="clear" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="maintenance_stats">
+            <subtasks>
+              <RakeTaskImpl description="Create maintenance stats for projects" fullCommand="maintenance_stats:create_maintenance_stats[number_to_sync]" id="create_maintenance_stats[number_to_sync]" />
+              <RakeTaskImpl description="Gather maintenance stats for a list of repositories" fullCommand="maintenance_stats:gather_maintenance_stats[input_file,commit]" id="gather_maintenance_stats[input_file,commit]" />
+              <RakeTaskImpl description="Update maintenance stats for repositories" fullCommand="maintenance_stats:update_maintenance_stats[number_to_sync,before_date]" id="update_maintenance_stats[number_to_sync,before_date]" />
+              <RakeTaskImpl description="" fullCommand="maintenance_stats:create_maintenance_stats" id="create_maintenance_stats" />
+              <RakeTaskImpl description="" fullCommand="maintenance_stats:gather_maintenance_stats" id="gather_maintenance_stats" />
+              <RakeTaskImpl description="" fullCommand="maintenance_stats:update_maintenance_stats" id="update_maintenance_stats" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl description="Prints out your Rack middleware stack" fullCommand="middleware" id="middleware" />
+          <RakeTaskImpl id="one_off">
+            <subtasks>
+              <RakeTaskImpl description="set stable flag on all tags" fullCommand="one_off:set_stable_tags" id="set_stable_tags" />
+              <RakeTaskImpl description="set stable flag on all versions" fullCommand="one_off:set_stable_versions" id="set_stable_versions" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="open_data">
+            <subtasks>
+              <RakeTaskImpl description="Export all open data csvs" fullCommand="open_data:export" id="export" />
+              <RakeTaskImpl description="Export dependencies open data csv" fullCommand="open_data:export_dependencies" id="export_dependencies" />
+              <RakeTaskImpl description="Export projects open data csv" fullCommand="open_data:export_projects" id="export_projects" />
+              <RakeTaskImpl description="Export projects with repository fields open data csv" fullCommand="open_data:export_projects_with_repository_fields" id="export_projects_with_repository_fields" />
+              <RakeTaskImpl description="Export repositories open data csv" fullCommand="open_data:export_repositories" id="export_repositories" />
+              <RakeTaskImpl description="Export tags open data csv" fullCommand="open_data:export_tags" id="export_tags" />
+              <RakeTaskImpl description="Export versions open data csv" fullCommand="open_data:export_versions" id="export_versions" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="pg_search">
+            <subtasks>
+              <RakeTaskImpl id="multisearch">
+                <subtasks>
+                  <RakeTaskImpl description="Rebuild PgSearch multisearch records for a given model" fullCommand="pg_search:multisearch:rebuild[model,schema]" id="rebuild[model,schema]" />
+                  <RakeTaskImpl description="" fullCommand="pg_search:multisearch:rebuild" id="rebuild" />
+                </subtasks>
+              </RakeTaskImpl>
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="pghero">
+            <subtasks>
+              <RakeTaskImpl description="Analyze tables" fullCommand="pghero:analyze" id="analyze" />
+              <RakeTaskImpl description="Autoindex tables" fullCommand="pghero:autoindex" id="autoindex" />
+              <RakeTaskImpl description="Capture query stats" fullCommand="pghero:capture_query_stats" id="capture_query_stats" />
+              <RakeTaskImpl description="Capture space stats" fullCommand="pghero:capture_space_stats" id="capture_space_stats" />
+              <RakeTaskImpl description="Remove old query stats" fullCommand="pghero:clean_query_stats" id="clean_query_stats" />
+              <RakeTaskImpl description="Remove old space stats" fullCommand="pghero:clean_space_stats" id="clean_space_stats" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="projects">
+            <subtasks>
+              <RakeTaskImpl description="Batch backfill conda" fullCommand="projects:backfill_conda" id="backfill_conda" />
+              <RakeTaskImpl description="Backfill old version licenses" fullCommand="projects:backfill_old_version_licenses[name,platform]" id="backfill_old_version_licenses[name,platform]" />
+              <RakeTaskImpl description="Batch backfill old licenses" fullCommand="projects:batch_backfill_old_version_licenses[platform]" id="batch_backfill_old_version_licenses[platform]" />
+              <RakeTaskImpl description="Check project repositories statuses" fullCommand="projects:chech_repo_status" id="chech_repo_status" />
+              <RakeTaskImpl description="Check to see if nuget projects have been removed" fullCommand="projects:check_nuget_yanks" id="check_nuget_yanks" />
+              <RakeTaskImpl description="Check status of projects" fullCommand="projects:check_status[max_num_of_projects_to_check,batch_size]" id="check_status[max_num_of_projects_to_check,batch_size]" />
+              <RakeTaskImpl description="Download missing packages" fullCommand="projects:download_missing" id="download_missing" />
+              <RakeTaskImpl description="Link dependencies to projects" fullCommand="projects:link_dependencies" id="link_dependencies" />
+              <RakeTaskImpl description="Sync potentially outdated projects" fullCommand="projects:potentially_outdated" id="potentially_outdated" />
+              <RakeTaskImpl description="Proactively sync watched projects" fullCommand="projects:proactive_sync[limit]" id="proactive_sync[limit]" />
+              <RakeTaskImpl description="Set license_normalized flag" fullCommand="projects:set_license_normalized" id="set_license_normalized" />
+              <RakeTaskImpl description="Sync projects" fullCommand="projects:sync" id="sync" />
+              <RakeTaskImpl description="Manual sync projects from list" fullCommand="projects:sync_from_list[input_file,commit]" id="sync_from_list[input_file,commit]" />
+              <RakeTaskImpl description="Slowly sync all pypi dependencies" fullCommand="projects:sync_pypi_deps" id="sync_pypi_deps" />
+              <RakeTaskImpl description="Update Go Base Modules" fullCommand="projects:update_go_base_modules[version]" id="update_go_base_modules[version]" />
+              <RakeTaskImpl description="Update lifting statuses of projects" fullCommand="projects:update_lifting_statuses" id="update_lifting_statuses" />
+              <RakeTaskImpl description="Update project repositories" fullCommand="projects:update_repos" id="update_repos" />
+              <RakeTaskImpl description="Update sourcerank of projects" fullCommand="projects:update_source_ranks" id="update_source_ranks" />
+              <RakeTaskImpl description="Verify Go Projects" fullCommand="projects:verify_go_projects[count]" id="verify_go_projects[count]" />
+              <RakeTaskImpl description="Verify NuGet Projects" fullCommand="projects:verify_nuget_projects[count]" id="verify_nuget_projects[count]" />
+              <RakeTaskImpl description="Verify Pypi Projects" fullCommand="projects:verify_pypi_projects[count]" id="verify_pypi_projects[count]" />
+              <RakeTaskImpl description="" fullCommand="projects:backfill_old_version_licenses" id="backfill_old_version_licenses" />
+              <RakeTaskImpl description="" fullCommand="projects:batch_backfill_old_version_licenses" id="batch_backfill_old_version_licenses" />
+              <RakeTaskImpl description="" fullCommand="projects:check_status" id="check_status" />
+              <RakeTaskImpl description="" fullCommand="projects:proactive_sync" id="proactive_sync" />
+              <RakeTaskImpl description="" fullCommand="projects:sync_from_list" id="sync_from_list" />
+              <RakeTaskImpl description="" fullCommand="projects:update_go_base_modules" id="update_go_base_modules" />
+              <RakeTaskImpl description="" fullCommand="projects:verify_go_projects" id="verify_go_projects" />
+              <RakeTaskImpl description="" fullCommand="projects:verify_nuget_projects" id="verify_nuget_projects" />
+              <RakeTaskImpl description="" fullCommand="projects:verify_pypi_projects" id="verify_pypi_projects" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl description="Remove schema information from model and fixture files" fullCommand="remove_annotation" id="remove_annotation" />
+          <RakeTaskImpl description="Removes the route map from routes.rb" fullCommand="remove_routes" id="remove_routes" />
+          <RakeTaskImpl description="Restart app by touching tmp/restart.txt" fullCommand="restart" id="restart" />
+          <RakeTaskImpl id="scores">
+            <subtasks>
+              <RakeTaskImpl description="calculate scores for enqueued project ids" fullCommand="scores:calculate" id="calculate" />
+              <RakeTaskImpl description="enqueue outdated project scores" fullCommand="scores:update" id="update" />
+              <RakeTaskImpl description="" fullCommand="scores:seed" id="seed" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="search">
+            <subtasks>
+              <RakeTaskImpl description="Benchmark pg_search" fullCommand="search:benchmark" id="benchmark" />
+              <RakeTaskImpl description="Reindex everything" fullCommand="search:reindex_everything" id="reindex_everything" />
+              <RakeTaskImpl description="Reindex projects" fullCommand="search:reindex_projects" id="reindex_projects" />
+              <RakeTaskImpl description="Reindex repositories" fullCommand="search:reindex_repos" id="reindex_repos" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl description="Generate a cryptographically secure secret key (this is typically used to generate a secret for cookie sessions)" fullCommand="secret" id="secret" />
+          <RakeTaskImpl id="sitemap">
+            <subtasks>
+              <RakeTaskImpl description="Delete all Sitemap files in public/ directory" fullCommand="sitemap:clean" id="clean" />
+              <RakeTaskImpl description="Generate sitemaps but don't ping search engines" fullCommand="sitemap:create" id="create" />
+              <RakeTaskImpl description="Install a default config/sitemap.rb file" fullCommand="sitemap:install" id="install" />
+              <RakeTaskImpl description="Generate sitemaps and ping search engines" fullCommand="sitemap:refresh" id="refresh" />
+              <RakeTaskImpl id="refresh">
+                <subtasks>
+                  <RakeTaskImpl description="Generate sitemaps but don't ping search engines" fullCommand="sitemap:refresh:no_ping" id="no_ping" />
+                </subtasks>
+              </RakeTaskImpl>
+              <RakeTaskImpl description="" fullCommand="sitemap:require" id="require" />
+              <RakeTaskImpl description="" fullCommand="sitemap:require_environment" id="require_environment" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl description="Run all specs in spec directory (excluding plugin specs)" fullCommand="spec" id="spec" />
+          <RakeTaskImpl id="spec">
+            <subtasks>
+              <RakeTaskImpl description="Run the code examples in spec/domain" fullCommand="spec:domain" id="domain" />
+              <RakeTaskImpl description="Run the code examples in spec/ext" fullCommand="spec:ext" id="ext" />
+              <RakeTaskImpl description="Run the code examples in spec/helpers" fullCommand="spec:helpers" id="helpers" />
+              <RakeTaskImpl description="Run the code examples in spec/lib" fullCommand="spec:lib" id="lib" />
+              <RakeTaskImpl description="Run the code examples in spec/mailers" fullCommand="spec:mailers" id="mailers" />
+              <RakeTaskImpl description="Run the code examples in spec/models" fullCommand="spec:models" id="models" />
+              <RakeTaskImpl description="Run the code examples in spec/queries" fullCommand="spec:queries" id="queries" />
+              <RakeTaskImpl description="Run the code examples in spec/requests" fullCommand="spec:requests" id="requests" />
+              <RakeTaskImpl description="Run the code examples in spec/routing" fullCommand="spec:routing" id="routing" />
+              <RakeTaskImpl description="Run the code examples in spec/serializers" fullCommand="spec:serializers" id="serializers" />
+              <RakeTaskImpl description="Run the code examples in spec/services" fullCommand="spec:services" id="services" />
+              <RakeTaskImpl description="Run the code examples in spec/tasks" fullCommand="spec:tasks" id="tasks" />
+              <RakeTaskImpl description="Run the code examples in spec/workers" fullCommand="spec:workers" id="workers" />
+              <RakeTaskImpl description="" fullCommand="spec:prepare" id="prepare" />
+              <RakeTaskImpl description="" fullCommand="spec:statsetup" id="statsetup" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl description="Report code statistics (KLOCs, etc) from the application or engine" fullCommand="stats" id="stats" />
+          <RakeTaskImpl id="time">
+            <subtasks>
+              <RakeTaskImpl description="List all time zones, list by two-letter country code (`bin/rails time:zones[US]`), or list by UTC offset (`bin/rails time:zones[-8]`)" fullCommand="time:zones[country_or_offset]" id="zones[country_or_offset]" />
+              <RakeTaskImpl description="" fullCommand="time:zones" id="zones" />
+              <RakeTaskImpl id="zones">
+                <subtasks>
+                  <RakeTaskImpl description="" fullCommand="time:zones:all" id="all" />
+                  <RakeTaskImpl description="" fullCommand="time:zones:local" id="local" />
+                  <RakeTaskImpl description="" fullCommand="time:zones:us" id="us" />
+                </subtasks>
+              </RakeTaskImpl>
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="tmp">
+            <subtasks>
+              <RakeTaskImpl description="Clear cache, socket and screenshot files from tmp/ (narrow w/ tmp:cache:clear, tmp:sockets:clear, tmp:screenshots:clear)" fullCommand="tmp:clear" id="clear" />
+              <RakeTaskImpl description="Creates tmp directories for cache, sockets, and pids" fullCommand="tmp:create" id="create" />
+              <RakeTaskImpl id="cache">
+                <subtasks>
+                  <RakeTaskImpl description="" fullCommand="tmp:cache:clear" id="clear" />
+                </subtasks>
+              </RakeTaskImpl>
+              <RakeTaskImpl id="pids">
+                <subtasks>
+                  <RakeTaskImpl description="" fullCommand="tmp:pids:clear" id="clear" />
+                </subtasks>
+              </RakeTaskImpl>
+              <RakeTaskImpl id="screenshots">
+                <subtasks>
+                  <RakeTaskImpl description="" fullCommand="tmp:screenshots:clear" id="clear" />
+                </subtasks>
+              </RakeTaskImpl>
+              <RakeTaskImpl id="sockets">
+                <subtasks>
+                  <RakeTaskImpl description="" fullCommand="tmp:sockets:clear" id="clear" />
+                </subtasks>
+              </RakeTaskImpl>
+              <RakeTaskImpl id="storage">
+                <subtasks>
+                  <RakeTaskImpl description="" fullCommand="tmp:storage:clear" id="clear" />
+                </subtasks>
+              </RakeTaskImpl>
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="users">
+            <subtasks>
+              <RakeTaskImpl description="Sync users permissions" fullCommand="users:sync_permissions" id="sync_permissions" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="version">
+            <subtasks>
+              <RakeTaskImpl description="Tests a sampling of project's versions to count occurrences of different versioning schemes" fullCommand="version:scheme_counter[package_list,output_file]" id="scheme_counter[package_list,output_file]" />
+              <RakeTaskImpl description="" fullCommand="version:scheme_counter" id="scheme_counter" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="yarn">
+            <subtasks>
+              <RakeTaskImpl description="Install all JavaScript dependencies as specified via Yarn" fullCommand="yarn:install" id="install" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="zeitwerk">
+            <subtasks>
+              <RakeTaskImpl description="Checks project structure for Zeitwerk compatibility" fullCommand="zeitwerk:check" id="check" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="bitbucket">
+            <subtasks>
+              <RakeTaskImpl description="" fullCommand="bitbucket:find_existing_repos" id="find_existing_repos" />
+              <RakeTaskImpl description="" fullCommand="bitbucket:find_new_repos" id="find_new_repos" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl description="" fullCommand="default" id="default" />
+          <RakeTaskImpl description="" fullCommand="environment" id="environment" />
+          <RakeTaskImpl id="export">
+            <subtasks>
+              <RakeTaskImpl description="" fullCommand="export:platform" id="platform" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="gitlab">
+            <subtasks>
+              <RakeTaskImpl description="" fullCommand="gitlab:find_existing_repos" id="find_existing_repos" />
+              <RakeTaskImpl description="" fullCommand="gitlab:find_new_repos" id="find_new_repos" />
+              <RakeTaskImpl description="" fullCommand="gitlab:find_updated_repos" id="find_updated_repos" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="graphql">
+            <subtasks>
+              <RakeTaskImpl description="" fullCommand="graphql:upgrade" id="upgrade" />
+              <RakeTaskImpl id="upgrade">
+                <subtasks>
+                  <RakeTaskImpl description="" fullCommand="graphql:upgrade:create_base_objects" id="create_base_objects" />
+                  <RakeTaskImpl description="" fullCommand="graphql:upgrade:member" id="member" />
+                  <RakeTaskImpl description="" fullCommand="graphql:upgrade:schema" id="schema" />
+                </subtasks>
+              </RakeTaskImpl>
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="maven">
+            <subtasks>
+              <RakeTaskImpl description="" fullCommand="maven:populate_google_maven" id="populate_google_maven" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl id="railties">
+            <subtasks>
+              <RakeTaskImpl id="install">
+                <subtasks>
+                  <RakeTaskImpl description="" fullCommand="railties:install:migrations" id="migrations" />
+                </subtasks>
+              </RakeTaskImpl>
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl description="" fullCommand="set_annotation_options" id="set_annotation_options" />
+          <RakeTaskImpl id="strong_migrations">
+            <subtasks>
+              <RakeTaskImpl description="" fullCommand="strong_migrations:alphabetize_columns" id="alphabetize_columns" />
+            </subtasks>
+          </RakeTaskImpl>
+          <RakeTaskImpl description="" fullCommand="tmp" id="tmp" />
+          <RakeTaskImpl description="" fullCommand="tmp/cache" id="tmp/cache" />
+          <RakeTaskImpl description="" fullCommand="tmp/cache/assets" id="tmp/cache/assets" />
+          <RakeTaskImpl description="" fullCommand="tmp/pids" id="tmp/pids" />
+          <RakeTaskImpl description="" fullCommand="tmp/sockets" id="tmp/sockets" />
+        </subtasks>
+      </RakeTaskImpl>
+    </option>
+  </component>
+</module>

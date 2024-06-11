@@ -8,6 +8,7 @@ module PackageManager
     BIBLIOTHECARY_SUPPORT = true
     URL = "https://hex.pm"
     COLOR = "#6e4a7e"
+    ICON = "hex.png"
 
     def self.package_link(db_project, version = nil)
       "https://hex.pm/packages/#{db_project.name}/#{version}"

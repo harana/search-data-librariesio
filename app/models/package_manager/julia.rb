@@ -7,6 +7,7 @@ module PackageManager
     BIBLIOTHECARY_SUPPORT = true
     URL = "http://pkg.julialang.org/"
     COLOR = "#a270ba"
+    ICON = "julia.svg"
 
     def self.package_link(db_project, _version = nil)
       "http://pkg.julialang.org/?pkg=#{db_project.name}&ver=release"

@@ -67,12 +67,6 @@ class Api::ApplicationController < ApplicationController
     current_api_key.try(:user)
   end
 
-  def es_query(klass, query, filters)
-    klass.search(query, filters: filters,
-                        sort: format_sort,
-                        order: format_order, api: true).paginate(page: page_number, per_page: per_page_number)
-  end
-
   def require_internal_api_key
     render json: { error: "Error 403, you don't have permissions for this operation." }, status: :forbidden unless current_api_key.present? && current_api_key.is_internal?
   end

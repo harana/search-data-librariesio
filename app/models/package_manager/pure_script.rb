@@ -7,6 +7,7 @@ module PackageManager
     BIBLIOTHECARY_PLANNED = true
     URL = "https://github.com/purescript/psc-package"
     COLOR = "#1D222D"
+    ICON = "purescript.svg"
 
     def self.project_names
       get("https://raw.githubusercontent.com/purescript/package-sets/master/packages.json").keys

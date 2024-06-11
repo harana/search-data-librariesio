@@ -7,6 +7,7 @@ module PackageManager
     BIBLIOTHECARY_PLANNED = true
     URL = "https://github.com/nim-lang/nimble"
     COLOR = "#37775b"
+    ICON = "nimble.svg"
 
     def self.install_instructions(db_project, version = nil)
       "nimble install #{db_project.name}" + (version ? "@##{version}" : "")

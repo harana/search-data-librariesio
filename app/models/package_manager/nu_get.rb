@@ -10,6 +10,7 @@ module PackageManager
     URL = "https://www.nuget.org"
     COLOR = "#178600"
     ENTIRE_PACKAGE_CAN_BE_DEPRECATED = true
+    ICON = "nuget.svg"
 
     def self.package_link(db_project, version = nil)
       "https://www.nuget.org/packages/#{db_project.name}/#{version}"

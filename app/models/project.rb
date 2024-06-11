@@ -61,7 +61,6 @@
 class Project < ApplicationRecord
   require "query_counter"
 
-  include ProjectSearch
   include SourceRank
   include Status
   include Releases
@@ -125,6 +124,7 @@ class Project < ApplicationRecord
   has_many :project_mutes, dependent: :delete_all
   has_many :registry_users, through: :registry_permissions
   has_one :readme, through: :repository
+  has_one :openai_content
   has_many :repository_maintenance_stats, through: :repository
 
   scope :updated_within, ->(start, stop) { where("updated_at >= ? and updated_at <= ? ", start, stop).order(updated_at: :asc) }
@@ -197,6 +197,9 @@ class Project < ApplicationRecord
   before_destroy :destroy_versions
   before_destroy :create_deleted_project
   after_create :destroy_deleted_project
+
+  after_create :update_repository_keywords
+  after_update :update_repository_keywords
 
   include PgSearch::Model
   DB_SEARCH_OPTIONS = {
@@ -289,6 +292,18 @@ class Project < ApplicationRecord
     repository&.license
   end
 
+  def repository_size
+    size = repository&.size
+    units = %w[B KiB MiB GiB TiB Pib EiB ZiB]
+
+    return '0.0 B' if size == nil
+    exp = (Math.log(size) / Math.log(1024)).to_i
+    exp += 1 if (size.to_f / 1024 ** exp >= 1024 - 0.05)
+    exp = units.size - 1 if exp > units.size - 1
+
+    '%.1f %s' % [size.to_f / 1024 ** exp, units[exp]]
+  end
+
   def repository_status
     repository&.status
   end
@@ -335,13 +350,6 @@ class Project < ApplicationRecord
     Project.where(id: mlt_ids).limit(5)
   rescue StandardError
     []
-  end
-
-  def mlt_ids
-    Rails.cache.fetch "projects:#{id}:mlt_ids", expires_in: 1.week do
-      results = Project.__elasticsearch__.client.mlt(id: id, index: "projects", type: "project", mlt_fields: "keywords_array,platform,description,repository_url", min_term_freq: 1, min_doc_freq: 2)
-      results["hits"]["hits"].map { |h| h["_id"] }
-    end
   end
 
   def destroy_versions
@@ -463,8 +471,18 @@ class Project < ApplicationRecord
   end
 
   def self.popular(options = {})
-    results = search("*", options.merge(sort: "rank", order: "desc"))
-    results.records.includes(:repository).reject { |p| p.repository.nil? }
+    results = Project.order(rank: :desc).limit(30)
+    results.includes(:repository).reject { |p| p.repository.nil? }
+  end
+
+  def self.recently_updated(options = {})
+    results = Project.joins(:repository).order("repositories.pushed_at DESC").limit(30)
+    results.includes(:repository).reject { |p| p.repository.nil? }
+  end
+
+  def self.recently_created(options = {})
+    results = Project.joins(:repository).order("repositories.created_at DESC").limit(30)
+    results.includes(:repository).reject { |p| p.repository.nil? }
   end
 
   def normalized_licenses
@@ -771,6 +789,46 @@ class Project < ApplicationRecord
       versions.find { |v| v.number == version }
     else
       versions.find_by(number: version)
+    end
+  end
+
+  def file_path
+    project_path = Pathname.new(name)
+    parent = project_path.parent.to_s
+
+    if parent == "."
+      File.join(platform.downcase, "#{project_path.basename}.html").to_s
+    else
+      File.join(platform.downcase, parent, "#{project_path.basename}.html").to_s
+    end
+  end
+
+  def url
+    "/#{file_path}"
+  end
+
+  def openai_code
+    formatted_code = openai_content.example_code.gsub('\n', "\n").gsub('\t', "\t").gsub('\"','"')
+    formatter = Rouge::Formatters::HTMLInline.new("github")
+    line_formatter = Rouge::Formatters::HTMLTable.new(formatter, line_format: '')
+    lexer = Rouge::Lexers.const_get(platform.capitalize).new
+    line_formatter.format(lexer.lex(formatted_code))
+  end
+
+  def update_repository_keywords
+    # Assuming `keywords_array` is an array of keyword strings in the Project model
+    current_keywords = self.keywords
+    existing_keywords = RepositoryKeyword.where(project: self).pluck(:keyword)
+
+    # Add new keywords
+    (current_keywords - existing_keywords).each do |new_keyword|
+      RepositoryKeyword.create!(keyword: new_keyword, project: self)
+      puts "Adding #{new_keyword}"
+    end
+
+    # Remove old keywords
+    (existing_keywords - current_keywords).each do |old_keyword|
+      RepositoryKeyword.where(keyword: old_keyword, project: self).destroy_all
     end
   end
 

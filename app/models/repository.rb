@@ -106,6 +106,7 @@ class Repository < ApplicationRecord
   after_commit :save_projects, on: :update
   after_commit :update_source_rank_async, on: [:update]
 
+  scope :has_readme, -> { where("repositories.id IN (SELECT repository_id FROM readmes)") }
   scope :without_readme, -> { where("repositories.id NOT IN (SELECT repository_id FROM readmes)") }
   scope :with_projects, -> { joins(:projects) }
   scope :without_projects, -> { includes(:projects).where(projects: { repository_id: nil }) }

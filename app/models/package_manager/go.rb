@@ -27,6 +27,7 @@ module PackageManager
     PROXY_BASE_URL = "https://proxy.golang.org"
     DISCOVER_URL = "https://pkg.go.dev"
     URL = DISCOVER_URL
+    ICON = "go.svg"
 
     VERSION_MODULE_REGEX = /(.+)\/(v\d+)(\/|$)/
 

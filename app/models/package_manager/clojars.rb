@@ -8,6 +8,7 @@ module PackageManager
     URL = "https://clojars.org"
     COLOR = "#db5855"
     NAME_DELIMITER = "/"
+    ICON = "clojars.svg"
 
     def self.package_link(db_project, version = nil)
       "https://clojars.org/#{db_project.name}" + (version ? "/versions/#{version}" : "")

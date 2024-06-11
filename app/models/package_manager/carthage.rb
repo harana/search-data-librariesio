@@ -7,6 +7,7 @@ module PackageManager
     BIBLIOTHECARY_SUPPORT = true
     URL = "https://github.com/Carthage/Carthage"
     COLOR = "#ffac45"
+    ICON = "carthage.svg"
 
     def self.project_names
       Project.platform("Carthage").map { |m| m.projects_dependencies.map(&:project_name).compact.map(&:downcase) }.flatten.uniq

@@ -152,8 +152,8 @@ namespace :download do
 
   desc "Download recent Maven packages asynchronously"
   task maven: :environment do
-    PackageManager::Maven::PROVIDER_MAP.each_value do |sub_class|
-      sub_class.import_recent_async
+    PackageManager::Maven::PROVIDER_MAP.each do |sub_class|
+      sub_class.provider_class.import_recent_async
     rescue StandardError => e
       puts e
       next
@@ -162,8 +162,8 @@ namespace :download do
 
   desc "Download all Maven packages asynchronously"
   task maven_all: :environment do
-    PackageManager::Maven::PROVIDER_MAP.each_value do |sub_class|
-      sub_class.import_async
+      PackageManager::Maven::PROVIDER_MAP.each do |sub_class|
+      sub_class.provider_class.import_async
     rescue StandardError => e
       puts e
       next

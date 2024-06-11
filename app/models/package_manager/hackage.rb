@@ -7,6 +7,7 @@ module PackageManager
     BIBLIOTHECARY_SUPPORT = true
     URL = "http://hackage.haskell.org"
     COLOR = "#29b544"
+    ICON = "hackage.svg"
 
     def self.package_link(db_project, version = nil)
       "http://hackage.haskell.org/package/#{db_project.name}" + (version ? "-#{version}" : "")

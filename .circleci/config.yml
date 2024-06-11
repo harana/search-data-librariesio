@@ -8,7 +8,7 @@ executors:
   libraries:
     working_directory: ~/libraries
     docker:
-      - image: ruby:3.1.5-slim-bullseye
+      - image: ruby:3.3.1-slim-bullseye
         environment:
           PGHOST: 127.0.0.1
           PGUSER: postgres
@@ -18,10 +18,6 @@ executors:
           POSTGRES_DB: libraries_test
           POSTGRES_PASSWORD: ""
       - image: redis:7.0-alpine
-      - image: elasticsearch:2.4.4
-        environment:
-          - cluster.name: elasticsearch
-          - action.auto_create_index: true
 
 commands:
   setup-ruby-env:

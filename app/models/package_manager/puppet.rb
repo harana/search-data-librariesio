@@ -8,6 +8,7 @@ module PackageManager
     BIBLIOTHECARY_PLANNED = true
     URL = "https://forge.puppet.com"
     COLOR = "#302B6D"
+    ICON = "puppet.svg"
 
     def self.project_names
       offset = 0

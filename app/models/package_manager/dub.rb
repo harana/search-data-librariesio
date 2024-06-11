@@ -7,6 +7,7 @@ module PackageManager
     BIBLIOTHECARY_SUPPORT = true
     URL = "http://code.dlang.org"
     COLOR = "#ba595e"
+    ICON = "dub.png"
 
     def self.package_link(db_project, version = nil)
       "http://code.dlang.org/packages/#{db_project.name}" + (version ? "/#{version}" : "")

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_05_01_171850) do
+ActiveRecord::Schema[7.0].define(version: 2024_06_07_011920) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
   enable_extension "pg_trgm"
@@ -117,6 +117,18 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_01_171850) do
     t.string "kind"
     t.index ["created_at"], name: "index_manifests_on_created_at"
     t.index ["repository_id"], name: "index_manifests_on_repository_id"
+  end
+
+  create_table "openai_contents", force: :cascade do |t|
+    t.integer "project_id"
+    t.text "about"
+    t.text "example_code"
+    t.text "use_cases"
+    t.text "tags"
+    t.text "faqs"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_openai_contents_on_project_id"
   end
 
   create_table "project_mutes", id: :serial, force: :cascade do |t|
@@ -274,6 +286,15 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_01_171850) do
     t.index ["status"], name: "index_repositories_on_status"
   end
 
+  create_table "repository_keywords", force: :cascade do |t|
+    t.string "keyword", null: false
+    t.bigint "project_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["keyword"], name: "index_repository_keywords_on_keyword"
+    t.index ["project_id"], name: "index_repository_keywords_on_project_id"
+  end
+
   create_table "repository_maintenance_stats", force: :cascade do |t|
     t.bigint "repository_id"
     t.string "category"
@@ -417,4 +438,5 @@ ActiveRecord::Schema[7.0].define(version: 2024_05_01_171850) do
     t.index ["repository_id"], name: "index_web_hooks_on_repository_id"
   end
 
+  add_foreign_key "repository_keywords", "projects"
 end

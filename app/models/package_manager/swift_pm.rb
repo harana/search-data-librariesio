@@ -7,15 +7,16 @@ module PackageManager
     BIBLIOTHECARY_SUPPORT = true
     URL = "https://developer.apple.com/swift/"
     COLOR = "#ffac45"
+    ICON = "swift_pm.svg"
 
     def self.project_names
-      @project_names ||= `rm -rf swift-package-crawler-data;git clone https://github.com/czechboy0/swift-package-crawler-data.git --depth 1; ls swift-package-crawler-data/PackageJSONFiles`.split("\n")
+      get("https://raw.githubusercontent.com/SwiftPackageIndex/PackageList/main/packages.json")
     end
 
     def self.project(name)
-      name_with_owner = name.gsub("-Package.json", "").split("_").join("/")
+      name_with_owner = name.gsub(/^https:\/\/github\.com\//, '').gsub(/\.git$/, '')
       {
-        name: "github.com/#{name_with_owner}",
+        name: name_with_owner,
         repository_url: "https://github.com/#{name_with_owner}",
       }
     end

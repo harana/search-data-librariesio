@@ -1,0 +1,93 @@
+
+#readme {
+  margin-top: -40px;
+  color: rgb(55 65 81);
+}
+
+#readme a {
+  color: rgb(22 163 74);
+}
+
+#readme .markdown-body {
+  word-break: break-word;
+}
+
+#readme article {
+  padding-top: 40px;
+}
+
+#readme a > img {
+  display: inline;
+}
+
+#readme h1.heading-element {
+  display: none;
+}
+
+#readme h2.heading-element {
+  font-weight: 600;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+#readme code {
+  background-color: rgb(240 253 244);
+  font-size: 14px;
+}
+
+#readme .highlight {
+  background-color: rgb(249, 250, 251);
+  border-radius: 5px;
+  box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgba(17, 24, 39, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+
+#readme .octicon {
+  display: none;
+}
+
+#readme .markdown-body h1, #readme .markdown-body h2, #readme .markdown-body h3, #readme .markdown-body h4, #readme .markdown-body h5, #readme .markdown-body h6 {
+  position: relative;
+}
+#readme .markdown-body h1 .anchor, #readme .markdown-body h2 .anchor, #readme .markdown-body h3 .anchor, #readme .markdown-body h4 .anchor, #readme .markdown-body h5 .anchor, #readme .markdown-body h6 .anchor {
+  display: none;
+  height: 100%;
+  align-items: center;
+  position: absolute;
+  right: 100%;
+  padding-right: 10px;
+}
+#readme .markdown-body h1 .anchor svg, #readme .markdown-body h2 .anchor svg, #readme .markdown-body h3 .anchor svg, #readme .markdown-body h4 .anchor svg, #readme .markdown-body h5 .anchor svg, #readme .markdown-body h6 .anchor svg {
+  height: 100%;
+}
+@media (min-width: 768px) {
+  #readme .markdown-body h1:hover .anchor, #readme .markdown-body h2:hover .anchor, #readme .markdown-body h3:hover .anchor, #readme .markdown-body h4:hover .anchor, #readme .markdown-body h5:hover .anchor, #readme .markdown-body h6:hover .anchor {
+    display: block;
+  }
+}
+#readme .markdown-body h1, #readme .markdown-body h2 {
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid #eee;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+#readme .markdown-body h3, #readme .markdown-body h4 {
+  color: #555;
+  font-weight: normal;
+  line-height: 1.1;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+#readme .markdown-body h3 {
+  font-size: 21px;
+}
+#readme .markdown-body h4 {
+  font-size: 18px;
+}
+#readme .markdown-body p {
+  margin-bottom: 1.25em;
+}
+#readme .markdown-body pre {
+  border: none;
+  padding: 15px;
+  margin: 0 0 1.5em 0;
+}

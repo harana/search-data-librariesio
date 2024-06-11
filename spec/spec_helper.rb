@@ -14,17 +14,6 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
-  config.around :each, elasticsearch: true do |example|
-    [Project].each do |model|
-      model.__elasticsearch__.create_index!({ force: true })
-      model.__elasticsearch__.import({ force: true })
-    end
-    example.run
-    [Project].each do |model|
-      model.__elasticsearch__.client.indices.delete index: model.index_name
-    end
-  end
-
   config.filter_run :focus
   config.run_all_when_everything_filtered = true
 

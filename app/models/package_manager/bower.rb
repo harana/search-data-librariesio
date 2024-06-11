@@ -8,6 +8,7 @@ module PackageManager
     SECURITY_PLANNED = true
     URL = "http://bower.io"
     COLOR = "#563d7c"
+    ICON = "bower.svg"
 
     def self.install_instructions(db_project, version = nil)
       "bower install #{db_project.name}" + (version ? "##{version}" : "")

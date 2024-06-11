@@ -7,6 +7,7 @@ module PackageManager
     BIBLIOTHECARY_SUPPORT = true
     URL = "https://cran.r-project.org/"
     COLOR = "#198CE7"
+    ICON = "cran.jpg"
 
     def self.package_link(db_project, _version = nil)
       "https://cran.r-project.org/package=#{db_project.name}"

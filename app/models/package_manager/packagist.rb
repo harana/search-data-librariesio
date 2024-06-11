@@ -10,6 +10,7 @@ module PackageManager
     URL = "https://packagist.org"
     COLOR = "#4F5D95"
     ENTIRE_PACKAGE_CAN_BE_DEPRECATED = true
+    ICON = "packagist.png"
 
     # TODO: rename PackageManager::Packagist -> PackageManager::Composer, and then  PackageManager::Packagist::Main => PackageManager::Composer::Packagist
     PROVIDER_MAP = ProviderMap.new(prioritized_provider_infos: [

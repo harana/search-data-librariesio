@@ -20,6 +20,7 @@ module PackageManager
       platform_version platform_machine platform_python_implementation
       implementation_name implementation_version extra
     ].freeze
+    ICON = "pypi.svg"
 
     def self.package_link(db_project, version = nil)
       # NB PEP 503: "All URLs which respond with an HTML5 page MUST end with a / and the repository SHOULD redirect the URLs without a / to add a / to the end."

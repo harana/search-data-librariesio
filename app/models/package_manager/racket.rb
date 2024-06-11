@@ -7,6 +7,7 @@ module PackageManager
     BIBLIOTHECARY_SUPPORT = false
     URL = "http://pkgs.racket-lang.org/"
     COLOR = "#375eab"
+    ICON = "racket.svg"
 
     def self.package_link(db_project, _version = nil)
       "http://pkgs.racket-lang.org/package/#{db_project.name}"
