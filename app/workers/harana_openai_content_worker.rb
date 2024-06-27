@@ -14,35 +14,47 @@ class HaranaOpenaiContentWorker
     return if OpenaiContent.find_by(project_id: project_id)
 
     prompt = <<-PROMPT
-      given a "#{project.platform}" library named "#{project.name}". I want a JSON document with the following fields:
-    - description: 150-word description in multiple paragraphs without repeating the library name or type
-    - use cases: array of 5 use cases for how this library could be used
-    - keywords: array of 5 single word keywords that represent this library
-    - example code: sample code for how this library could be used
-    - questions: array of 20 questions/answers that a user might commonly ask regarding this library. Each answer should be 2-3 sentences.
-      The audience for this is software engineers so the tone should be factual. Keep the language basic with less salesy words like seamlessly.
+    given "#{project.platform}" library named "#{project.name}" I want JSON with these fields:
+    - about: 150-word description in multiple paragraphs (any newlines seperated with <br>). Do not mention "#{project.name}".
+    - use_cases: 5 use cases
+    - example_code: sample code with escaped tabs
+    - faqs: 20 questions/answers that a user might commonly ask. Each answer should be 2-3 sentences.
+      Audience is software engineers. Keep language basic. Don't include start/end JSON tokens.
     PROMPT
 
-    body = {
-      model: "gpt-3.5-turbo",
-      prompt: prompt,
-      max_tokens: 1000,
-      temperature: 0.5,
-    }
-  
-    options = {
-      headers: {
-        "Content-Type" => "application/json",
-        "Authorization" => "Bearer #{ENV.fetch("harana_openai_key", nil)}",
-      }
-    }
-  
-    azure_endpoint = "https://api.openai.com/v1/completions"
-    response = HTTParty.post(azure_endpoint, body: body.to_json, **options)
-    if response.success?
-      Rails.logger.error(response.parsed_response)
-    else
-      { error: response.parsed_response["error"], status_code: response.code }
+    OpenAI.configure do |config|
+      config.access_token = "3b167f06ef21400eaebe6689ae3a6c8b"
+      config.uri_base = "https://harana-data-librariesio.openai.azure.com/openai/deployments/Harana"
+      config.api_type = :azure
+      config.api_version = "2023-03-15-preview"
+      config.log_errors = false
     end
+
+    response = OpenAI::Client.new(request_timeout: 600).chat(
+    parameters: {
+        model: "gpt-4o",
+        messages: [{ role: "user", content: prompt}],
+        temperature: 0.7
+    })
+
+    content = response.dig("choices", 0, "message", "content")
+    
+    begin
+      json_content = JSON.parse(content)
+      OpenaiContent.create!(
+        project_id: project_id,
+        about: json_content['about'].to_json,
+        example_code: json_content['example_code'],
+        faqs: json_content['faqs'].to_json,
+        tags: json_content['tags'].to_json,
+        use_cases: json_content['use_cases'].to_json
+      )
+      Rails.logger.info("OpenAI content successfully created for project #{project.name}")
+    rescue JSON::ParserError => e
+      Rails.logger.error("Failed to parse JSON content: #{e.message}")
+    rescue ActiveRecord::RecordInvalid => e
+      Rails.logger.error("Failed to save OpenAI content: #{e.message}")
+    end
+
   end
 end

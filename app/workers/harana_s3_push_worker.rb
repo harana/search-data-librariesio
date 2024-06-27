@@ -7,10 +7,12 @@ credentials = Aws::Credentials.new(ENV.fetch("harana_aws_access_key", nil), ENV.
 
 class HaranaS3PushWorker
   include Sidekiq::Worker
-  sidekiq_options queue: :small, lock: :until_executed
+  sidekiq_options queue: :critical, lock: :until_executed
 
-  def perform(file)
-    Project.find(project_id).update_tags
+  def perform(project_id)
+    project = Project.find(project_id)
+
+    
   end
 end
 

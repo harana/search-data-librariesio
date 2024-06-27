@@ -192,6 +192,8 @@ class Project < ApplicationRecord
   after_commit :update_repository_async, on: :create
   after_commit :set_dependents_count_async, on: %i[create update]
   after_commit :update_source_rank_async, on: %i[create update]
+  after_commit :update_openai_content_async, on: %i[create update]
+  after_commit :push_to_s3_async, on: %i[create update]
   after_commit :send_project_updated, on: %i[create update]
   before_save  :update_details
   before_destroy :destroy_versions
