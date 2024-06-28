@@ -17,7 +17,7 @@ namespace :harana do
   desc "Generates package_manager pages and publishes to S3"
   task generate_package_manager_pages: :environment do
     s3 = S3.new
-    package_managers.each do |package_manager|
+    PackageManager.list.each do |package_manager|
       file = Tempfile.new(package_manager.downcase)
       FileUtils.mkdir_p(File.dirname(file))
       Rails.logger.info("Generating: #{file}")
