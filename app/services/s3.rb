@@ -9,9 +9,13 @@ class S3
     s3 = Aws::S3::Resource.new(region: "ap-southeast-2", credentials: credentials)
     bucket = s3.bucket("harana-website-haranadev")
   
-    obj = bucket.object(key)
     if overwrite
-      obj.put(body: content)
+      s3.put_object(
+        :bucket => bucket,
+        :key    => key,
+        :body   => IO.read(content)
+      )
+      
       puts "Content uploaded to #{obj.public_url}"
     else
       existing_content = obj.get rescue nil
