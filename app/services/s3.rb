@@ -5,8 +5,8 @@ class S3
   # Save a string as an object to the specified S3 bucket
   def save_object(key, content, overwrite: true)
 
-    credentials = Aws::Credentials.new(ENV.fetch("harana_aws_access_key", nil), ENV.fetch("harana_aws_secret_key", nil))
-    s3 = Aws::S3::Resource.new(region: "ap-southeast-2", credentials: @credentials)
+    credentials = Aws::Credentials.new(ENV.fetch("HARANA_AWS_ACCESS_KEY", nil), ENV.fetch("HARANA_AWS_SECRET_KEY", nil))
+    s3 = Aws::S3::Resource.new(region: "ap-southeast-2", credentials: credentials)
     bucket = s3.bucket("harana-website-haranadev")
   
     obj = bucket.object(key)
