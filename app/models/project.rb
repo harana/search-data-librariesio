@@ -69,6 +69,9 @@ class Project < ApplicationRecord
   include GitlabProject
   include BitbucketProject
 
+  include HaranaOpenaiContents
+  include HaranaS3
+
   HAS_DEPENDENCIES = false
   STATUSES = ["Active", "Deprecated", "Unmaintained", "Help Wanted", "Removed", "Hidden"].freeze
   API_FIELDS = %i[

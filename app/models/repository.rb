@@ -69,6 +69,8 @@ class Repository < ApplicationRecord
   include RepoMetadata
   include RepositorySourceRank
 
+  include HaranaS3
+
   # eager load this module to avoid clashing with Gitlab gem in development
   RepositoryHost::Gitlab # rubocop: disable Lint/Void
 

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module OpenaiContents
+module HaranaOpenaiContents
   extend ActiveSupport::Concern
 
   def update_openai_content_async

@@ -17,7 +17,9 @@
 #  index_openai_contents_on_project_id  (project_id)
 #
 class OpenaiContent < ApplicationRecord
-    belongs_to :project
+  include HaranaS3
+  
+  belongs_to :project
 
-    after_commit :push_project_to_s3_async, on: %i[create update]
+  after_commit :push_project_to_s3_async, on: %i[create update]
 end
