@@ -8,7 +8,7 @@ class S3
     credentials = Aws::Credentials.new(ENV.fetch("HARANA_AWS_ACCESS_KEY", nil), ENV.fetch("HARANA_AWS_SECRET_KEY", nil))
     s3 = Aws::S3::Resource.new(region: "ap-southeast-2", credentials: credentials)
     bucket = s3.bucket("harana-website-haranadev")
-    file_name = File.dirname(file)
+    file_name = File.absolute_path(file)
 
     obj = bucket.object(key)
     if overwrite
