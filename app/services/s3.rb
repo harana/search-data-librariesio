@@ -3,24 +3,21 @@ require "aws-sdk-s3"
 class S3
 
   # Save a string as an object to the specified S3 bucket
-  def save_object(key, content, overwrite: true)
+  def save_object(key, file, overwrite: true)
 
     credentials = Aws::Credentials.new(ENV.fetch("HARANA_AWS_ACCESS_KEY", nil), ENV.fetch("HARANA_AWS_SECRET_KEY", nil))
     s3 = Aws::S3::Resource.new(region: "ap-southeast-2", credentials: credentials)
     bucket = s3.bucket("harana-website-haranadev")
-  
+    file_name = File.dirname(file)
+
+    obj = bucket.object(key)
     if overwrite
-      s3.put_object(
-        :bucket => bucket,
-        :key    => key,
-        :body   => IO.read(content)
-      )
-      
+      obj.upload_file(file_name)
       puts "Content uploaded to #{obj.public_url}"
     else
       existing_content = obj.get rescue nil
       if existing_content.nil?
-        obj.put(body: content)
+        obj.upload_file(file_name)
         puts "Content uploaded to #{obj.public_url}"
       else
         puts "Content not uploaded because it already exists and overwrite is disabled."
