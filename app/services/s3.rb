@@ -12,7 +12,7 @@ class S3
   def save_object(key, file, overwrite: true, content_type: "text/html")
 
     credentials = Aws::Credentials.new(ENV.fetch("HARANA_AWS_ACCESS_KEY", nil), ENV.fetch("HARANA_AWS_SECRET_KEY", nil))
-    s3 = Aws::S3::Resource.new(region: "ap-southeast-2", credentials: credentials)
+    s3 = Aws::S3::Client.new(region: "ap-southeast-2", credentials: credentials)
     file_name = File.absolute_path(file)
     bucket = get_bucket
 
