@@ -18,6 +18,7 @@ class S3
 
     obj = bucket.object(key)
     if overwrite
+      delete_s3_object(key)
       obj.upload_file(file_name)
       puts "Content uploaded to #{obj.public_url}"
     else
