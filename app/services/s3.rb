@@ -13,7 +13,7 @@ class S3
     file_name = File.absolute_path(file)
 
     client.put_object({
-      body: file_name, 
+      body: IO.read(file_name), 
       bucket: "harana-website-haranadev", 
       key: key,
       content_type: content_type
