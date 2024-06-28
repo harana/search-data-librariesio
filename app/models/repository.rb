@@ -107,7 +107,6 @@ class Repository < ApplicationRecord
   after_commit :update_all_info_async, on: :create
   after_commit :save_projects, on: :update
   after_commit :update_source_rank_async, on: [:update]
-  after_commit :push_project_to_s3_async, on: %i[create update]
 
   scope :has_readme, -> { where("repositories.id IN (SELECT repository_id FROM readmes)") }
   scope :without_readme, -> { where("repositories.id NOT IN (SELECT repository_id FROM readmes)") }
