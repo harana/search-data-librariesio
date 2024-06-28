@@ -6,7 +6,6 @@ require "fileutils"
 
 namespace :harana do
 
-
   desc "Generates home page and publishes to S3"
   task generate_home_page: :environment do
     s3 = S3.new

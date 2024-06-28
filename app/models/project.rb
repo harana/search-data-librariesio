@@ -816,7 +816,9 @@ class Project < ApplicationRecord
     formatted_code = openai_content.example_code.gsub('\n', "\n").gsub('\t', "\t").gsub('\"','"')
     formatter = Rouge::Formatters::HTMLInline.new("github")
     line_formatter = Rouge::Formatters::HTMLTable.new(formatter, line_format: '')
-    lexer = Rouge::Lexers.const_get(platform.capitalize).new
+
+    language = PackageManagers.mappings[platform.capitalize]
+    lexer = Rouge::Lexers.const_get(language).new
     line_formatter.format(lexer.lex(formatted_code))
   end
 
