@@ -19,5 +19,5 @@
 class OpenaiContent < ApplicationRecord
     belongs_to :project
 
-    after_commit :push_to_s3_async, on: %i[create update]
+    after_commit :push_project_to_s3_async, on: %i[create update]
 end
