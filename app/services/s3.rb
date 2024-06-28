@@ -1,6 +1,6 @@
 require "aws-sdk-s3"
 
-module S3
+class S3
   credentials = Aws::Credentials.new(ENV.fetch("harana_aws_access_key", nil), ENV.fetch("harana_aws_secret_key", nil))
   s3 = Aws::S3::Resource.new(region: "ap-southeast-2", credentials: credentials)
   bucket = s3.bucket("harana-website-haranadev")
