@@ -20,7 +20,7 @@ namespace :harana do
     PackageManagers.list.each do |package_manager|
       file = Tempfile.new(package_manager.downcase)
       FileUtils.mkdir_p(File.dirname(file))
-      Rails.logger.info("Generating: #{file}")
+      Rails.logger.info("Generating package manager: #{package_manager}")
       File.write(file, ERB.new(File.read("app/assets/harana/templates/package_manager.html.erb")).result_with_hash({package_manager: package_manager}))
       s3.save_object("#{package_manager.downcase}/index.html", file, overwrite: true)
       File.delete(file)
@@ -31,7 +31,7 @@ namespace :harana do
   task generate_tag_pages: :environment do
     s3 = S3.new
     RepositoryKeyword.unique_keywords.each do |keyword|
-      puts "Generating tag page for #{keyword}"
+      puts "Generating tag: #{keyword}"
       file = Tempfile.new(keyword)
       FileUtils.mkdir_p(File.dirname(file))
       File.write(file, ERB.new(File.read("app/assets/harana/templates/tag.html.erb")).result_with_hash({keyword: keyword}))
