@@ -15,7 +15,7 @@ class S3
     client.put_object({
       body: file_name, 
       bucket: "harana-website-haranadev", 
-      key: file_name,
+      key: key,
       content_type: content_type
     })
 
