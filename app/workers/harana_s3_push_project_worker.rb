@@ -13,7 +13,7 @@ class HaranaS3PushProjectWorker
     Rails.logger.info("Generating: #{file}")
     FileUtils.mkdir_p(File.dirname(file))
     File.write(file, ERB.new(File.read("app/assets/harana/templates/library.html.erb")).result_with_hash({project: project}))
-    s3.save_object(project.file_path, file, overwrite: true)
+    s3.save_object(project.file_path, file)
 
     File.delete(file)
   end

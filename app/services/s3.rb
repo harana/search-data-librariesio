@@ -8,29 +8,18 @@ class S3
   end
 
   # Save a string as an object to the specified S3 bucket
-  def save_object(key, file, overwrite: true, content_type: "text/html")
+  def save_object(key, file, content_type: "text/html")
     client = get_client
     file_name = File.absolute_path(file)
 
-    if overwrite
-      client.put_object({
-        body: file_name, 
-        bucket: "harana-website-haranadev", 
-        key: file_name,
-        content_type: content_type
-      })
+    client.put_object({
+      body: file_name, 
+      bucket: "harana-website-haranadev", 
+      key: file_name,
+      content_type: content_type
+    })
 
-      puts "Content uploaded to #{obj.public_url}"
-    else
-      existing_content = obj.get rescue nil
-      if existing_content.nil?
-      obj.upload_file(file_name, options: { content_type: content_type })
-        puts "Content uploaded to #{obj.public_url}"
-      else
-        puts "Content not uploaded because it already exists and overwrite is disabled."
-      end
-    end
-  rescue StandardError => e
+    rescue StandardError => e
     puts "Failed to upload content: #{e.message}"
   end
 

@@ -22,7 +22,7 @@ namespace :harana do
       FileUtils.mkdir_p(File.dirname(file))
       Rails.logger.info("Generating package manager: #{package_manager}")
       File.write(file, ERB.new(File.read("app/assets/harana/templates/package_manager.html.erb")).result_with_hash({package_manager: package_manager}))
-      s3.save_object("#{package_manager.downcase}/index.html", file, overwrite: true)
+      s3.save_object("#{package_manager.downcase}/index.html", file)
       File.delete(file)
     end
   end
@@ -35,13 +35,13 @@ namespace :harana do
       file = Tempfile.new(keyword)
       FileUtils.mkdir_p(File.dirname(file))
       File.write(file, ERB.new(File.read("app/assets/harana/templates/tag.html.erb")).result_with_hash({keyword: keyword}))
-      s3.save_object("tags/#{keyword}.html", file, overwrite: true)
+      s3.save_object("tags/#{keyword}.html", file)
       File.delete(file)
     end
 
     file = Tempfile.new("tags/index")
     File.write(file, ERB.new(File.read("app/assets/harana/templates/tags.html.erb")).result_with_hash({}))
-    s3.save_object("tags/index.html", file, overwrite: true)
+    s3.save_object("tags/index.html", file)
     File.delete(file)
   end
 
@@ -109,7 +109,7 @@ namespace :harana do
         file = Tempfile.new(sitemap_name)
         File.open(file, 'w') { |file| 
           file.write(sitemap.target!)
-          s3.save_object("sitemap/#{sitemap_name}", file, overwrite: true)
+          s3.save_object("sitemap/#{sitemap_name}", file)
         }
         File.delete(file)
 
@@ -125,7 +125,7 @@ namespace :harana do
     file = Tempfile.new("sitemap_index")
     File.open(sitemap_index_file, 'w') { |file| 
       file.write(sitemap_index.target!)
-      s3.save_object("sitemap/index.xml", file, overwrite: true)
+      s3.save_object("sitemap/index.xml", file)
     }
     File.delete(file)
   end
