@@ -8,7 +8,7 @@ module HaranaS3
   end
 
   def push_project_to_s3_async_given_openai
-    id = OpenaiContent.find(id).first.project_id
+    id = OpenaiContent.find(id).project_id
     HaranaS3PushProjectWorker.perform_async(id)
   end
 
