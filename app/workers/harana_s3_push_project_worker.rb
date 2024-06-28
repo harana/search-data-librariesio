@@ -9,7 +9,7 @@ class HaranaS3PushProjectWorker
     project = Project.find(project_id)
     s3 = S3.new
 
-    file = Tempfile.new(project_id)
+    file = Tempfile.new(project_id.to_s)
     Rails.logger.info("Generating: #{file}")
     FileUtils.mkdir_p(File.dirname(file))
     File.write(file, ERB.new(File.read("app/assets/harana/templates/library.html.erb")).result_with_hash({project: project}))
