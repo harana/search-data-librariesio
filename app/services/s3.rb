@@ -9,7 +9,7 @@ class S3
   end
 
   # Save a string as an object to the specified S3 bucket
-  def save_object(key, file, overwrite: true)
+  def save_object(key, file, overwrite: true, content_type: "text/html")
 
     credentials = Aws::Credentials.new(ENV.fetch("HARANA_AWS_ACCESS_KEY", nil), ENV.fetch("HARANA_AWS_SECRET_KEY", nil))
     s3 = Aws::S3::Resource.new(region: "ap-southeast-2", credentials: credentials)
@@ -18,12 +18,12 @@ class S3
 
     obj = bucket.object(key)
     if overwrite
-      obj.upload_file(file_name)
+      obj.upload_file(file_name, options: { content_type: content_type })
       puts "Content uploaded to #{obj.public_url}"
     else
       existing_content = obj.get rescue nil
       if existing_content.nil?
-        obj.upload_file(file_name)
+        obj.upload_file(file_name, options: { content_type: content_type })
         puts "Content uploaded to #{obj.public_url}"
       else
         puts "Content not uploaded because it already exists and overwrite is disabled."
