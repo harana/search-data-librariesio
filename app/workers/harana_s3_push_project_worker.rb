@@ -7,7 +7,7 @@ class HaranaS3PushProjectWorker
 
   def perform(project_id)
     project = Project.find(project_id)
-    s3 = S3Helper.new
+    s3 = S3.new
 
     file = Tempfile.new(project_id)
     Rails.logger.info("Generating: #{file}")

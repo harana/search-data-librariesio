@@ -9,14 +9,14 @@ namespace :harana do
 
   desc "Generates home page and publishes to S3"
   task generate_home_page: :environment do
-    s3 = S3Handler.new
+    s3 = S3.new
     th = TemplateHelper.new
     th.render("home.html", key1: "value1")
   end
 
   desc "Generates package_manager pages and publishes to S3"
   task generate_package_manager_pages: :environment do
-    s3 = S3Handler.new
+    s3 = S3.new
     package_managers.each do |package_manager|
       file = Tempfile.new(package_manager.downcase)
       FileUtils.mkdir_p(File.dirname(file))
@@ -29,7 +29,7 @@ namespace :harana do
 
   desc "Generates tag pages and publishes to S3"
   task generate_tag_pages: :environment do
-    s3 = S3Handler.new
+    s3 = S3.new
     RepositoryKeyword.unique_keywords.each do |keyword|
       puts "Generating tag page for #{keyword}"
       file = Tempfile.new(keyword)
@@ -47,7 +47,7 @@ namespace :harana do
 
   desc "Generates sitemaps and publishes to S3"
   task generate_sitemaps: :environment do
-    s3 = S3Handler.new
+    s3 = S3.new
     package_managers = PackageManagers.list
 
     host = 'https://harana.dev'
