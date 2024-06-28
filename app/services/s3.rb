@@ -18,12 +18,19 @@ class S3
 
     obj = bucket.object(key)
     if overwrite
-      obj.upload_file(file_name, options: { content_type: content_type })
+
+      s3.put_object({
+        body: file_name, 
+        bucket: bucket, 
+        key: file_name,
+        options: { content_type: content_type }
+      })
+
       puts "Content uploaded to #{obj.public_url}"
     else
       existing_content = obj.get rescue nil
       if existing_content.nil?
-        obj.upload_file(file_name, options: { content_type: content_type })
+      obj.upload_file(file_name, options: { content_type: content_type })
         puts "Content uploaded to #{obj.public_url}"
       else
         puts "Content not uploaded because it already exists and overwrite is disabled."
