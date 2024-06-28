@@ -69,7 +69,7 @@ class Project < ApplicationRecord
   include GitlabProject
   include BitbucketProject
 
-  include HaranaOpenaiContents
+  include HaranaOpenaiContent
   include HaranaS3
 
   HAS_DEPENDENCIES = false
