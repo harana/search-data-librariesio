@@ -2,26 +2,20 @@ require "aws-sdk-s3"
 
 class S3
 
-  def get_bucket
+  def get_client
     credentials = Aws::Credentials.new(ENV.fetch("HARANA_AWS_ACCESS_KEY", nil), ENV.fetch("HARANA_AWS_SECRET_KEY", nil))
-    s3 = Aws::S3::Resource.new(region: "ap-southeast-2", credentials: credentials)
-    s3.bucket("harana-website-haranadev")
+    Aws::S3::Client.new(region: "ap-southeast-2", credentials: credentials)
   end
 
   # Save a string as an object to the specified S3 bucket
   def save_object(key, file, overwrite: true, content_type: "text/html")
-
-    credentials = Aws::Credentials.new(ENV.fetch("HARANA_AWS_ACCESS_KEY", nil), ENV.fetch("HARANA_AWS_SECRET_KEY", nil))
-    s3 = Aws::S3::Client.new(region: "ap-southeast-2", credentials: credentials)
+    client = get_client
     file_name = File.absolute_path(file)
-    bucket = get_bucket
 
-    obj = bucket.object(key)
     if overwrite
-
-      s3.put_object({
+      client.put_object({
         body: file_name, 
-        bucket: bucket, 
+        bucket: "harana-website-haranadev", 
         key: file_name,
         content_type: content_type
       })
