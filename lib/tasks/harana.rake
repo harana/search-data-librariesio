@@ -4,62 +4,56 @@ require "builder"
 require "erb"
 require "fileutils"
 
-namespace :harana_website do
+namespace :harana do
 
-  package_managers = ["Bower", "Cargo", "Carthage", "Clojars", "Cocoapods", "Conda", "CPAN", "CRAN", "Dub", "Elm", "Go", "Hackage", "Haxelib", "Hex", "Homebrew", "Julia", "Maven", "Meteor", "Nimble", "NPM", "NuGet", "Packagist", "Pub", "Puppet", "PureScript", "PyPi", "Racket", "Rubygems", "SwiftPM"]
 
   desc "Generates home page and publishes to S3"
   task generate_home_page: :environment do
+    s3 = S3Handler.new
     th = TemplateHelper.new
     th.render("home.html", key1: "value1")
   end
 
   desc "Generates package_manager pages and publishes to S3"
   task generate_package_manager_pages: :environment do
+    s3 = S3Handler.new
     package_managers.each do |package_manager|
-      file = File.join("output", package_manager.downcase, "index.html")
+      file = Tempfile.new(package_manager.downcase)
       FileUtils.mkdir_p(File.dirname(file))
       Rails.logger.info("Generating: #{file}")
       File.write(file, ERB.new(File.read("app/assets/harana/templates/package_manager.html.erb")).result_with_hash({package_manager: package_manager}))
-      # HaranaS3PushWorker.perform_async(file)  
-    end
-  end
-
-  desc "Generates project pages and publishes to S3"
-  task generate_project_pages: :environment do
-    Project.all.each do |project|
-      file = File.join("output", project.file_path)
-      Rails.logger.info("Generating: #{file}")
-      FileUtils.mkdir_p(File.dirname(file))
-      File.write(file, ERB.new(File.read("app/assets/harana/templates/library.html.erb")).result_with_hash({project: project}))
-      # HaranaS3PushWorker.perform_async(file)
+      s3.save_object("#{package_manager.downcase}/index.html", file, overwrite: true)
+      File.delete(file)
     end
   end
 
   desc "Generates tag pages and publishes to S3"
   task generate_tag_pages: :environment do
+    s3 = S3Handler.new
     RepositoryKeyword.unique_keywords.each do |keyword|
       puts "Generating tag page for #{keyword}"
-      file = File.join("output", "tags", "#{keyword}.html")
+      file = Tempfile.new(keyword)
       FileUtils.mkdir_p(File.dirname(file))
       File.write(file, ERB.new(File.read("app/assets/harana/templates/tag.html.erb")).result_with_hash({keyword: keyword}))
+      s3.save_object("tags/#{keyword}.html", file, overwrite: true)
+      File.delete(file)
     end
 
-    file = File.join("output", "tags", "index.html")
+    file = Tempfile.new("tags/index")
     File.write(file, ERB.new(File.read("app/assets/harana/templates/tags.html.erb")).result_with_hash({}))
+    s3.save_object("tags/index.html", file, overwrite: true)
+    File.delete(file)
   end
 
   desc "Generates sitemaps and publishes to S3"
   task generate_sitemaps: :environment do
-    # Set up the host name for URL creation
+    s3 = S3Handler.new
+    package_managers = PackageManagers.list
+
     host = 'https://harana.dev'
     sitemap_limit = 50_000
     sitemap_index = Builder::XmlMarkup.new(indent: 2)
     sitemap_index.instruct! :xml, version: "1.0", encoding: "UTF-8"
-
-    # Create directories
-    sitemap_dir = Rails.root.join("output", "sitemap")
-    FileUtils.mkdir_p(sitemap_dir)
 
     sitemap_index.sitemapindex xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9" do
       Project.find_in_batches(batch_size: sitemap_limit).with_index do |projects, batch|
@@ -108,15 +102,16 @@ namespace :harana_website do
               sitemap.priority '0.7'
               end
           end
-
         end
 
         # Save the sitemap file
-        sitemap_file = sitemap_dir.join("sitemap_#{batch + 1}.xml")
-        File.open(sitemap_file, 'w') { |file| 
-          file.write(sitemap.target!) 
-          # HaranaS3PushWorker.perform_async(file)
+        sitemap_name = "sitemap_#{batch + 1}.xml"
+        file = Tempfile.new(sitemap_name)
+        File.open(file, 'w') { |file| 
+          file.write(sitemap.target!)
+          s3.save_object("sitemap/#{sitemap_name}", file, overwrite: true)
         }
+        File.delete(file)
 
         # Add the sitemap to the sitemap index
         sitemap_index.sitemap do
@@ -127,11 +122,11 @@ namespace :harana_website do
     end
 
     # Save the sitemap index file
-    sitemap_index_file = sitemap_dir.join("sitemap_index.xml")
+    file = Tempfile.new("sitemap_index")
     File.open(sitemap_index_file, 'w') { |file| 
-      file.write(sitemap_index.target!) 
-      # HaranaS3PushWorker.perform_async(file)
+      file.write(sitemap_index.target!)
+      s3.save_object("sitemap/index.xml", file, overwrite: true)
     }
+    File.delete(file)
   end
-
 end
