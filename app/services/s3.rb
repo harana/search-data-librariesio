@@ -7,7 +7,7 @@ class S3
 
   # Save a string as an object to the specified S3 bucket
   def save_object(key, content, overwrite: true)
-    obj = bucket.object(key)
+    obj = @bucket.object(key)
     if overwrite
       obj.put(body: content)
       puts "Content uploaded to #{obj.public_url}"
@@ -26,7 +26,7 @@ class S3
 
   # Delete an object from the specified S3 bucket
   def delete_s3_object(key)
-    obj = bucket.object(key)
+    obj = @bucket.object(key)
     if obj.delete
       puts "File #{key} deleted successfully."
     else
