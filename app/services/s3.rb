@@ -23,7 +23,7 @@ class S3
         body: file_name, 
         bucket: bucket, 
         key: file_name,
-        options: { content_type: content_type }
+        content_type: content_type
       })
 
       puts "Content uploaded to #{obj.public_url}"
